@@ -1,4 +1,7 @@
 import Image from 'next/image'
+import Link from 'next/link'
+
+
 const Menu = () => {
     return(
         <div id='top-menu' className=" z-10 w-full flex justify-between p-2 absolute bg-transparent md:pt-5 md:pb-5">
@@ -17,8 +20,9 @@ const Menu = () => {
               </div>
 
 
-
-              <a href="#" className="text-white text-base md:text-xs 2xl:text-lg lg:text-base text-shadow-sm font-normal pl-5">About</a>
+              <Link href="/about">
+              <a className="text-white text-base md:text-xs 2xl:text-lg lg:text-base text-shadow-sm font-normal pl-5">About</a>
+              </Link>
               <a href="#" className="text-white text-base md:text-xs 2xl:text-lg lg:text-base text-shadow-sm font-normal pl-5">Destinations</a>
 
               <a href="#" className="text-white text-base md:text-xs 2xl:text-lg lg:text-base text-shadow-sm font-normal pl-5">Responsible Tourism</a>
