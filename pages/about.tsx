@@ -26,9 +26,9 @@ function About() {
                     <p className="p-2 text-lg font-milonga">We are passionate minds seeking raw, wild and real. Living for us is travelling, creating 
                     experiences and maintaining a strong bond with nature. </p>
                     <div className="flex">
-                        <div className="h-auto  w-1/2 m-1 mt-4">
-                            <h1 className="text-center text-xl font-bold">CONNECT MORE PEOPLE WITH NATURE</h1>
-                            <p className="p-2 text-lg font-milonga">Tour de South started off as an effort to share what we feel 
+                        <div className="h-auto  w-1/2 m-1 mt-4 bg-blue-400 filter blur-2xl">
+                            <h1 className="text-center text-xl font-bold filter blur-none  z-50">CONNECT MORE PEOPLE WITH NATURE</h1>
+                            <p className="p-2 text-lg font-milonga blur-none  z-50">Tour de South started off as an effort to share what we feel 
                             of travel and to connect more people with nature. </p>
                         </div>
                         <div className="h-60 w-1/2 m-1">
@@ -37,15 +37,16 @@ function About() {
                     </div>
                     <div className="flex  p-4">
                         <div className="h-auto  w-1/2 m-1">
-                            <h1 className="text-center text-xl font-bold">ADVENTURE FILLED WITH TREKKING</h1>
+                            
                             <img src="/assets/trekking.png" />
                         </div>
                         <div className="h-60 w-1/2 m-1">
+                            <h1 className="text-center text-xl font-bold">ADVENTURE FILLED WITH TREKKING</h1>
                             <p className="p-2 text-lg font-milonga">Exclusive offbeat locations and adventure
                             filled trekking experiences, with all experiences bringing you closer to the planet.  </p>                            
                         </div>
                     </div>
-                    <div className="flex  p-4">
+                    <div className="flex  p-4 mt-8">
                         <div className="h-auto  w-1/2 m-1">
                         <h1 className="text-center text-xl font-bold">WARMTH AND CHILLS</h1>
                         <p className="p-2 text-lg font-milonga">Our spaces will give you the warmth you need, and the chills you crave! </p>
@@ -56,10 +57,11 @@ function About() {
                     </div>
                     <div className="flex  p-4">
                         <div className="h-auto  w-1/2 m-1">
-                            <h1 className="text-center text-xl font-bold">INDOOR AND OUTDOOR STAY EXPERIENCES</h1>
-                            <img src="/assets/tent.png" />
+                            
+                            <img className="mt-4" src="/assets/tent.png" />
                         </div>
                         <div className="h-60 w-1/2 m-1">
+                            <h1 className="text-center text-xl font-bold">INDOOR AND OUTDOOR STAY EXPERIENCES</h1>
                             <p className="p-2 text-lg font-milonga">It will revive your soul, freshen your breathe and cheer you up.  </p>                            
                         </div>
                     </div>

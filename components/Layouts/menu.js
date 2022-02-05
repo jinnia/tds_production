@@ -23,8 +23,9 @@ const Menu = () => {
               <Link href="/about">
               <a className="text-white text-base md:text-xs 2xl:text-lg lg:text-base text-shadow-sm font-normal pl-5">About</a>
               </Link>
+              <Link href="/destination">
               <a href="#" className="text-white text-base md:text-xs 2xl:text-lg lg:text-base text-shadow-sm font-normal pl-5">Destinations</a>
-
+              </Link>
               <a href="#" className="text-white text-base md:text-xs 2xl:text-lg lg:text-base text-shadow-sm font-normal pl-5">Responsible Tourism</a>
               <a href="#" className="text-white text-base md:text-xs 2xl:text-lg lg:text-base text-shadow-sm font-normal pl-5">Blog</a>
               <a href="#" className="text-white text-base md:text-xs 2xl:text-lg lg:text-base text-shadow-sm font-normal pl-5">Contact us</a>
