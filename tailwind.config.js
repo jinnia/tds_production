@@ -7,26 +7,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-            milonga: ['\'Milonga\', cursive;'],
-            Battlebridge: ['Battlebridge']
-          }
+        milonga: ['\'Milonga\', cursive;', ...defaultTheme.fontFamily.sans],
+        Battlebridge: ['\'Battlebridge\' , Arial, sans-serif;'],
+        // K22: ['\'K22\' , Arial, sans-serif;'],
+      },
+      lineHeight: {
+        'extra-loose': '2.5',
+        '12': '3rem',
+      }
     },
-    
-    // screens: {
-    //   'sm': '640px',
-    //   // => @media (min-width: 640px) { ... }
 
-    //   'md': '768px',
-    //   // => @media (min-width: 768px) { ... }
-
-    //   'lg': '1024px',
-    //   // => @media (min-width: 1024px) { ... }
-
-    //   'xl': '1280px',
-    //   // => @media (min-width: 1280px) { ... }
-    // }
-  
-    
   },
   plugins: [],
 }
