@@ -7,11 +7,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-            milonga: ['\'Milonga\', cursive;', ...defaultTheme.fontFamily.sans],
-            //sans: ['Battlebridge', ...defaultTheme.fontFamily.sans]
-          }
+        milonga: ['\'Milonga\', cursive;', ...defaultTheme.fontFamily.sans],
+        Battlebridge: ['\'Battlebridge\' , Arial, sans-serif;'],
+        // K22: ['\'K22\' , Arial, sans-serif;'],
+      },
+      lineHeight: {
+        'extra-loose': '2.5',
+        '12': '3rem',
+      }
     },
-    
+
   },
   plugins: [],
 }
