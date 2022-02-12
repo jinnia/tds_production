@@ -9,7 +9,10 @@ module.exports = {
       fontFamily: {
             milonga: ['\'Milonga\', cursive;'],
             Battlebridge: ['Battlebridge']
-          }
+          },
+      borderRadius: {
+        extraLarge: '2rem'
+      }
     },
     
     // screens: {
