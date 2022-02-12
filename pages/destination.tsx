@@ -19,10 +19,10 @@ function About() {
 
             <div className="flex flex-col h-full">
                 <div className="w-full h-80">
-                    <img src="/assets/mountain.png" />
+                    <img src="/assets/sunset.jpg" />
                 </div>
                 <div className="w-full h-full">
-                    <h1 className="inline-block text-center font-bold text-xl p-2">CLOUDFARM</h1>
+                    <h1 className="text-center font-bold text-xl p-2">CLOUDFARM</h1>
                     <p className="p-2 text-lg font-milonga">Cloudfarm will mesmerize all your senses without limits, we promise. 
                     You'll wake up amidst the clouds, with the rays of the sun kissing you. You'll find yourself in a dream.</p>
                     <div className="flex">
