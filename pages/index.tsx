@@ -9,9 +9,27 @@ import { useMediaQuery } from 'react-responsive'
 
 // this is a comment added for testing the repository git functionality
 export default function Home() {
-  const blogs = [{ id: 1, title: 'this is title 1', description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`, image: 'https://via.placeholder.com/150' },
-  { id: 2, title: 'this is title 2', description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`, image: 'https://via.placeholder.com/150' },
-  { id: 3, title: 'this is title 3', description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`, image: 'https://via.placeholder.com/150' }]
+  const blogs = [{ id: 1, title: 'this is title 1', description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`, image: '/assets/CloudFarm/CloudFarm1.jpg' },
+  { id: 2, title: 'this is title 2', description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`, image: '/assets/CloudFarm/CloudFarm2.jpg' },
+  { id: 3, title: 'this is title 3', description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`, image: '/assets/CloudFarm/CloudFarm3.jpg' },
+  { id: 4, title: 'this is title 4', description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`, image: '/assets/CloudFarm/CloudFarm4.jpg' }
+
+  ]
+
+  //write css styles for the swiper
+  const styles = {
+    swiper: {
+      width: '100%',
+      height: '100%',
+      margin: '0 auto',
+      overflow: 'hidden',
+      position: 'relative',
+      zIndex: '1',
+      backgroundColor: '#fff',
+      boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
+      borderRadius: '10px',
+    },
+  }
 
   const isTablet = useMediaQuery({
     query: '(min-width: 640px)'
@@ -34,7 +52,7 @@ export default function Home() {
         {/* { isSmallDisplay && <h1>Messages: {count}</h1>} */}
         {/* <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" className="w-full h-screen object-cover"></img> */}
         {/* <img src="/assets/images/main.jpg" className="w-full h-screen object-cover"></img> */}
-        <img src="https://via.placeholder.com/1500" className="w-full h-screen object-cover"></img>
+        <img src="/assets/CloudFarm/mainBG.jpg" className="flex w-full h-screen object-cover" />
         {
           // isSmallDisplay
           //  ?
@@ -102,6 +120,7 @@ export default function Home() {
               <Swiper
                 spaceBetween={10}
                 slidesPerView={isTablet ? 4 : isSmallDisplay ? 4 : 3}
+
               // onSlideChange={() => console.log('slide change')}
               // onSwiper={(swiper) => console.log(swiper)}
               >
@@ -149,24 +168,7 @@ export default function Home() {
                 </SwiperSlide>
 
 
-                <SwiperSlide>
-                  <div className="">
-                    <button className=" outline-none 2xl:h-14 w-full bg-white text-center text-black px-4 py-2 rounded-full shadow-2xl mt-2 font-thin text-sm flex justify-around items-center">
-                      <Image src="/assets/icons/forest-tree.svg" alt="Hill" width={40} height={isExtraBigDisplay ? 40 : 25} />
-                      <div className="font-semibold text-black align-middle items-center 2xl:text-xl">Forest</div>
-                    </button>
-                  </div>
-                </SwiperSlide>
 
-
-                <SwiperSlide>
-                  <div className="">
-                    <button className="2xl:h-16 w-full bg-white text-center text-black px-4 py-2 rounded-full shadow-2xl mt-2 font-thin text-sm flex justify-around items-center">
-                      <Image src="/assets/icons/forest-tree.svg" alt="Hill" width={40} height={isExtraBigDisplay ? 40 : 25} />
-                      <div className="font-semibold text-black align-middle items-center 2xl:text-xl">Forest</div>
-                    </button>
-                  </div>
-                </SwiperSlide>
               </Swiper>
             </div>
 
@@ -226,7 +228,7 @@ export default function Home() {
                     </div> */}
                     {/* property image */}
                     <div id="cardImage" className="pt-3 pl-3 pr-3 pb-2">
-                      <img src="/assets/images/tds13.jpg" className="w-full h-40 md:h-60 object-cover rounded-xl"></img>
+                      <img src="/assets/CloudFarm/CloudFarm1.jpg" className="w-full h-40 md:h-60 object-cover rounded-xl"></img>
                     </div>
                     {/* properties description */}
 
@@ -295,7 +297,7 @@ export default function Home() {
                     </div> */}
                     {/* property image */}
                     <div id="cardImage" className="pt-3 pl-3 pr-3 pb-2">
-                      <img src="/assets/images/tds1.jpg" className="w-full h-40 md:h-60 object-cover rounded-xl"></img>
+                      <img src="/assets/CloudFarm/CloudFarm2.jpg" className="w-full h-40 md:h-60 object-cover rounded-xl"></img>
                     </div>
                     {/* properties description */}
 
@@ -363,7 +365,7 @@ export default function Home() {
                     </div> */}
                     {/* property image */}
                     <div id="cardImage" className="pt-3 pl-3 pr-3 pb-2">
-                      <img src="/assets/images/tds11.jpg" className="w-full h-40 md:h-60 object-cover rounded-xl"></img>
+                      <img src="/assets/CloudFarm/CloudFarm3.jpg" className="w-full h-40 md:h-60 object-cover rounded-xl"></img>
                     </div>
                     {/* properties description */}
 
@@ -433,7 +435,7 @@ export default function Home() {
                     </div> */}
                     {/* property image */}
                     <div id="cardImage" className="pt-3 pl-3 pr-3 pb-2">
-                      <img src="/assets/images/tds3.jpg" className="w-full h-40 md:h-60 object-cover rounded-xl"></img>
+                      <img src="/assets/CloudFarm/CloudFarm4.jpg" className="w-full h-40 md:h-60 object-cover rounded-xl"></img>
                     </div>
                     {/* properties description */}
 
@@ -519,7 +521,7 @@ export default function Home() {
 
 
 
-      {/* <ResponsibleTourism blogs={blogs}/> */}
+      <ResponsibleTourism blogs={blogs} />
 
 
       {/* responsible card end */}
