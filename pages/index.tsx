@@ -6,6 +6,8 @@ import Footer from '../components/Layouts/footer'
 import Menu from '../components/Layouts/menu'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { useMediaQuery } from 'react-responsive'
+import WhatsAppWidget from 'react-whatsapp-widget'
+import 'react-whatsapp-widget/dist/index.css'
 
 // this is a comment added for testing the repository git functionality
 export default function Home() {
@@ -45,6 +47,10 @@ export default function Home() {
   })
   return (
     <>
+
+      <WhatsAppWidget phoneNumber='9809517582' position="right"
+        widgetWidth="300px"
+        widgetWidthMobile="260px" />
       <Menu />
       {/* Add home screen imagewith screen height */}
       <div id="loadingScreen1" className="relative bg-white">
@@ -52,7 +58,7 @@ export default function Home() {
         {/* { isSmallDisplay && <h1>Messages: {count}</h1>} */}
         {/* <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" className="w-full h-screen object-cover"></img> */}
         {/* <img src="/assets/images/main.jpg" className="w-full h-screen object-cover"></img> */}
-        <img src="/assets/CloudFarm/mainBG.jpg" className="flex w-full h-screen object-cover" />
+        <img src="/assets/external/camping-in-steppe-2021-08-26-17-20-17-utc.jpg" className="flex w-full h-screen object-cover" />
         {
           // isSmallDisplay
           //  ?
@@ -74,9 +80,9 @@ export default function Home() {
 
         <div id="main-typography-position" className="absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:container">
           <div id="main-typography" className="p-2">
-            <h1 id="main-heading" className='text-shadow-xl font-bold text-white text-4xl md:text-4xl sm:text-5xl md:mb-3 2xl:text-7xl '>Welcome to Tour de South</h1>
-            <h1 className="text-shadow-sm font-semibold text-white text-1xl  md:mb-3 2xl:text-4xl">lorem ipsume dolar emit </h1>
-            <button className="bg-yellow-600 text-center font-normal text-white px-4 py-1 2xl:px-6 2xl:py-3 rounded-full shadow-2xl mt-2 font-thin text-sm flex 2xl:text-2xl">Call to Book
+            <h1 id="main-heading" className='text-shadow-xl font-bold text-white text-6xl tracking-wider md:text-8xl sm:text-8xl md:mb-3 2xl:text-8xl font-philosopher text-transparent bg-clip-text bg-gradient-to-b from-green-400 to-slate-800 drop-shadow-2xl'>Welcome to Tour de South</h1>
+            <h1 className="text-shadow-sm text-white text-3xl  md:mb-3 2xl:text-4xl font-philosopher  tracking-wider">lorem ipsume dolar emit </h1>
+            <button className="bg-green-800 text-center text-white px-4 py-1 2xl:px-6 2xl:py-3 rounded-full shadow-2xl mt-2 font-thin text-sm flex 2xl:text-2xl">Call to Book
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 2xl:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
               </svg>
@@ -90,7 +96,7 @@ export default function Home() {
 
           <div id="main-chips" className="p-2 flex md:hidden">
             <div className="w-10/12">
-              <h6 className="text-shadow-lg  text-white text-xl">Choose your interest</h6>
+              <h6 className="text-shadow-lg  text-white text-2xl  font-philosopher   tracking-wider">Choose your interest</h6>
             </div>
             <div className="w-1/12 flex align-middle justify-around items-center ">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 fill-current text-white" viewBox="0 0 24 24" stroke="currentColor">
@@ -126,9 +132,9 @@ export default function Home() {
               >
                 <SwiperSlide>
                   <div className="">
-                    <button className="  outline-none 2xl:h-14 w-full bg-yellow-600 text-center text-white px-4 py-2 rounded-full shadow-2xl mt-2 font-thin text-sm flex  justify-around items-center">
+                    <button className="  outline-none 2xl:h-14 w-full bg-green-500 text-center text-white px-4 py-2 rounded-full shadow-2xl mt-2 font-thin text-sm flex  justify-around items-center">
                       <Image src="/assets/icons/mountain.svg" alt="Hill" width={40} height={isExtraBigDisplay ? 40 : 25} />
-                      <div className="font-semibold text-white align-middle items-center 2xl:text-xl">Hill</div>
+                      <div className="text-white align-middle items-center 2xl:text-xl  font-milonga tracking-widest">Hill</div>
                     </button>
                   </div>
                 </SwiperSlide>
@@ -136,7 +142,7 @@ export default function Home() {
                   <div className="">
                     <button className=" outline-none 2xl:h-14 w-full bg-white text-center text-black px-4 py-2 rounded-full shadow-2xl mt-2 font-thin text-sm flex justify-around items-center">
                       <Image src="/assets/icons/ocean-waves.svg" alt="Hill" width={40} height={isExtraBigDisplay ? 50 : 25} />
-                      <div className="font-semibold text-black align-middle items-center 2xl:text-xl">Beach</div>
+                      <div className="font-semibold text-black align-middle items-center 2xl:text-xl  font-milonga tracking-widest">Beach</div>
                     </button>
                   </div>
                 </SwiperSlide>
@@ -144,16 +150,7 @@ export default function Home() {
                   <div className="">
                     <button className=" outline-none 2xl:h-14 w-full bg-white text-center text-black px-4 py-2 rounded-full shadow-2xl mt-2 font-thin text-sm flex justify-around items-center">
                       <Image src="/assets/icons/forest-tree.svg" alt="Hill" width={40} height={isExtraBigDisplay ? 40 : 25} />
-                      <div className="font-semibold text-black align-middle items-center 2xl:text-xl">Forest</div>
-                    </button>
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <div className="">
-                    <button className=" outline-none 2xl:h-14 w-full bg-white text-center text-black px-4 py-2 rounded-full shadow-2xl mt-2 font-thin text-sm flex justify-around items-center">
-                      <Image src="/assets/icons/forest-tree.svg" alt="Hill" width={40} height={isExtraBigDisplay ? 40 : 25} />
-                      <div className="font-semibold text-black align-middle items-center 2xl:text-xl">Forest</div>
+                      <div className="font-semibold text-black align-middle items-center 2xl:text-xl  font-milonga tracking-widest">Forest</div>
                     </button>
                   </div>
                 </SwiperSlide>
@@ -162,7 +159,16 @@ export default function Home() {
                   <div className="">
                     <button className=" outline-none 2xl:h-14 w-full bg-white text-center text-black px-4 py-2 rounded-full shadow-2xl mt-2 font-thin text-sm flex justify-around items-center">
                       <Image src="/assets/icons/forest-tree.svg" alt="Hill" width={40} height={isExtraBigDisplay ? 40 : 25} />
-                      <div className="font-semibold text-black align-middle items-center 2xl:text-xl">Forest</div>
+                      <div className="font-semibold text-black align-middle items-center 2xl:text-xl  font-milonga tracking-widest">Forest</div>
+                    </button>
+                  </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <div className="">
+                    <button className=" outline-none 2xl:h-14 w-full bg-white text-center text-black px-4 py-2 rounded-full shadow-2xl mt-2 font-thin text-sm flex justify-around items-center">
+                      <Image src="/assets/icons/forest-tree.svg" alt="Hill" width={40} height={isExtraBigDisplay ? 40 : 25} />
+                      <div className="font-semibold text-black align-middle items-center 2xl:text-xl  font-milonga tracking-widest">Forest</div>
                     </button>
                   </div>
                 </SwiperSlide>
@@ -237,14 +243,13 @@ export default function Home() {
 
                         <div id="cardHeading" className="flex justify-between">
                           <div id="cardHeading">
-                            <h4 className="text-lg font-semibold text-shadow text-gray-600 ">Hill Stays</h4>
+                            <h4 className="text-lg font-semibold text-shadow text-gray-600 font-philosopher tracking-widest ">Hill Stays</h4>
                           </div>
                         </div>
 
-                        <h5 className="text-sm font-semibold text-shadow text-gray-600 pb-1">Form stay in forest</h5>
-                        <h4 className="text-sm font-bold text-shadow text-gray-800 pb-1">Property Name goes here</h4>
-                        <h5 className="text-sm font-semibold text-shadow text-gray-600 pb-1">5 Guests, 2 Bedroom , 4 Beds , 2 Bathroom </h5>
-
+                        <h5 className="text-sm font-semibold text-shadow text-gray-600 pb-1  font-milonga tracking-wider">Form stay in forest</h5>
+                        <h4 className="text-sm font-bold text-shadow text-gray-800 pb-1 font-milonga tracking-wider" >Property Name goes here</h4>
+                        <h5 className="text-sm font-semibold text-shadow text-gray-600 pb-1 font-milonga tracking-wider">5 Guests, 2 Bedroom , 4 Beds , 2 Bathroom </h5>
 
                       </div>
                       <div id="rightSideIcon">
@@ -260,10 +265,10 @@ export default function Home() {
 
                     <div id="cardControls" className="pl-3 pr-3 pb-3 flex justify-between">
                       <button className="bg-white-600 text-center border border-gray-300  text-black px-4 py-1 rounded-full shadow-2xl mt-2 font-normal text-sm flex">
-                        <span className="font-bold">₹ 4,678 / Night</span>&nbsp; Call to Book
+                        <span className="font-bold font-milonga">₹ 4,678 / Night</span>&nbsp;&nbsp;&nbsp; <span className=' font-milonga pl-8'>Call to Book</span>
                       </button>
 
-                      <button className="bg-white-600 text-center border border-gray-300  text-black px-4 py-1 rounded-full shadow-2xl mt-2 font-normal text-sm flex">
+                      <button className="bg-white-600 text-center border border-gray-300  text-black px-4 py-1 rounded-full shadow-2xl mt-2 font-normal text-sm flex  font-milonga">
                         More
                       </button>
 
@@ -306,14 +311,13 @@ export default function Home() {
 
                         <div id="cardHeading" className="flex justify-between">
                           <div id="cardHeading">
-                            <h4 className="text-lg font-semibold text-shadow text-gray-600 ">Hill Stays</h4>
+                            <h4 className="text-lg font-semibold text-shadow text-gray-600 font-philosopher tracking-widest ">Hill Stays</h4>
                           </div>
                         </div>
 
-                        <h5 className="text-sm font-semibold text-shadow text-gray-600 pb-1">Form stay in forest</h5>
-                        <h4 className="text-sm font-bold text-shadow text-gray-800 pb-1">Property Name goes here</h4>
-                        <h5 className="text-sm font-semibold text-shadow text-gray-600 pb-1">5 Guests, 2 Bedroom , 4 Beds , 2 Bathroom </h5>
-
+                        <h5 className="text-sm font-semibold text-shadow text-gray-600 pb-1  font-milonga tracking-wider">Form stay in forest</h5>
+                        <h4 className="text-sm font-bold text-shadow text-gray-800 pb-1 font-milonga tracking-wider" >Property Name goes here</h4>
+                        <h5 className="text-sm font-semibold text-shadow text-gray-600 pb-1 font-milonga tracking-wider">5 Guests, 2 Bedroom , 4 Beds , 2 Bathroom </h5>
 
                       </div>
                       <div id="rightSideIcon">
@@ -329,10 +333,10 @@ export default function Home() {
 
                     <div id="cardControls" className="pl-3 pr-3 pb-3 flex justify-between">
                       <button className="bg-white-600 text-center border border-gray-300  text-black px-4 py-1 rounded-full shadow-2xl mt-2 font-normal text-sm flex">
-                        <span className="font-bold">₹ 4,678 / Night</span>&nbsp; Call to Book
+                        <span className="font-bold font-milonga">₹ 4,678 / Night</span>&nbsp;&nbsp;&nbsp; <span className=' font-milonga pl-8'>Call to Book</span>
                       </button>
 
-                      <button className="bg-white-600 text-center border border-gray-300  text-black px-4 py-1 rounded-full shadow-2xl mt-2 font-normal text-sm flex">
+                      <button className="bg-white-600 text-center border border-gray-300  text-black px-4 py-1 rounded-full shadow-2xl mt-2 font-normal text-sm flex  font-milonga">
                         More
                       </button>
 
@@ -374,19 +378,18 @@ export default function Home() {
 
                         <div id="cardHeading" className="flex justify-between">
                           <div id="cardHeading">
-                            <h4 className="text-lg font-semibold text-shadow text-gray-600 ">Hill Stays</h4>
+                            <h4 className="text-lg font-semibold text-shadow text-gray-600 font-philosopher tracking-widest ">Hill Stays</h4>
                           </div>
                         </div>
 
-                        <h5 className="text-sm font-semibold text-shadow text-gray-600 pb-1">Carlm stay</h5>
-                        <h4 className="text-sm font-bold text-shadow text-gray-800 pb-1">Property Name goes here</h4>
-                        <h5 className="text-sm font-semibold text-shadow text-gray-600 pb-1">5 Guests, 2 Bedroom , 4 Beds , 2 Bathroom </h5>
-
+                        <h5 className="text-sm font-semibold text-shadow text-gray-600 pb-1  font-milonga tracking-wider">Form stay in forest</h5>
+                        <h4 className="text-sm font-bold text-shadow text-gray-800 pb-1 font-milonga tracking-wider" >Property Name goes here</h4>
+                        <h5 className="text-sm font-semibold text-shadow text-gray-600 pb-1 font-milonga tracking-wider">5 Guests, 2 Bedroom , 4 Beds , 2 Bathroom </h5>
 
                       </div>
                       <div id="rightSideIcon">
 
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 20 20" >
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 fill-current text-red-600" viewBox="0 0 20 20" >
                           <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
                         </svg>
 
@@ -397,10 +400,10 @@ export default function Home() {
 
                     <div id="cardControls" className="pl-3 pr-3 pb-3 flex justify-between">
                       <button className="bg-white-600 text-center border border-gray-300  text-black px-4 py-1 rounded-full shadow-2xl mt-2 font-normal text-sm flex">
-                        <span className="font-bold">₹ 1,869 / Night</span>&nbsp; Call to Book
+                        <span className="font-bold font-milonga">₹ 4,678 / Night</span>&nbsp;&nbsp;&nbsp; <span className=' font-milonga pl-8'>Call to Book</span>
                       </button>
 
-                      <button className="bg-white-600 text-center border border-gray-300  text-black px-4 py-1 rounded-full shadow-2xl mt-2 font-normal text-sm flex">
+                      <button className="bg-white-600 text-center border border-gray-300  text-black px-4 py-1 rounded-full shadow-2xl mt-2 font-normal text-sm flex  font-milonga">
                         More
                       </button>
 
@@ -442,15 +445,20 @@ export default function Home() {
                     <div id="cardDescription" className="pl-3 pr-3 pb-1 flex justify-between">
                       <div id="leftSideDecription">
 
-                        <h5 className="text-sm font-semibold text-shadow text-gray-600 pb-1">Carlm stay</h5>
-                        <h4 className="text-sm font-bold text-shadow text-gray-800 pb-1">Property Name goes here</h4>
-                        <h5 className="text-sm font-semibold text-shadow text-gray-600 pb-1">5 Guests, 2 Bedroom , 4 Beds , 2 Bathroom </h5>
+                        <div id="cardHeading" className="flex justify-between">
+                          <div id="cardHeading">
+                            <h4 className="text-lg font-semibold text-shadow text-gray-600 font-philosopher tracking-widest ">Hill Stays</h4>
+                          </div>
+                        </div>
 
+                        <h5 className="text-sm font-semibold text-shadow text-gray-600 pb-1  font-milonga tracking-wider">Form stay in forest</h5>
+                        <h4 className="text-sm font-bold text-shadow text-gray-800 pb-1 font-milonga tracking-wider" >Property Name goes here</h4>
+                        <h5 className="text-sm font-semibold text-shadow text-gray-600 pb-1 font-milonga tracking-wider">5 Guests, 2 Bedroom , 4 Beds , 2 Bathroom </h5>
 
                       </div>
                       <div id="rightSideIcon">
 
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 20 20" >
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 fill-current text-red-600" viewBox="0 0 20 20" >
                           <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
                         </svg>
 
@@ -461,10 +469,10 @@ export default function Home() {
 
                     <div id="cardControls" className="pl-3 pr-3 pb-3 flex justify-between">
                       <button className="bg-white-600 text-center border border-gray-300  text-black px-4 py-1 rounded-full shadow-2xl mt-2 font-normal text-sm flex">
-                        <span className="font-bold">₹ 1,869 / Night</span>&nbsp; Call to Book
+                        <span className="font-bold font-milonga">₹ 4,678 / Night</span>&nbsp;&nbsp;&nbsp; <span className=' font-milonga pl-8'>Call to Book</span>
                       </button>
 
-                      <button className="bg-white-600 text-center border border-gray-300  text-black px-4 py-1 rounded-full shadow-2xl mt-2 font-normal text-sm flex">
+                      <button className="bg-white-600 text-center border border-gray-300  text-black px-4 py-1 rounded-full shadow-2xl mt-2 font-normal text-sm flex  font-milonga">
                         More
                       </button>
 
