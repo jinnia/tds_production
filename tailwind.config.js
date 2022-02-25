@@ -7,9 +7,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-            milonga: ['\'Milonga\', cursive;'],
-            Battlebridge: ['Battlebridge']
-          },
+        milonga: ['\'Milonga\', cursive;'],
+        philosopher: ['\'Morning Glory\', cursive;'],
+        Battlebridge: ['Morning Glory']
+      },
       borderRadius: {
         extraLarge: '2rem'
         // K22: ['\'K22\' , Arial, sans-serif;'],
