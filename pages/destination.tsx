@@ -17,7 +17,7 @@ function About() {
             <Footer /> */}
 
 
-            <div className="flex flex-col h-full">
+            <div className="container mx-auto flex flex-col h-full">
                 <div className="w-full h-80">
                     <img className="rounded-b-extraLarge" src="/assets/sunset.jpg" />
                 </div>

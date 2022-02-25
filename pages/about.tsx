@@ -17,7 +17,7 @@ function About() {
             <Footer /> */}
 
 
-            <div className="flex flex-col">
+            <div className="container mx-auto flex flex-col">
                 <div className="sm:flex-row-reverse flex flex-col align-middle items-center justify-center">
                     <div className="w-full h-auto sm:hidden">
                         <img className="w-full" src="/assets/mountain.png" />
