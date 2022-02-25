@@ -48,9 +48,7 @@ export default function Home() {
   return (
     <>
 
-      <WhatsAppWidget phoneNumber='9809517582' position="right"
-        widgetWidth="300px"
-        widgetWidthMobile="260px" />
+
       <Menu />
       {/* Add home screen imagewith screen height */}
       <div id="loadingScreen1" className="relative bg-white">
@@ -536,7 +534,8 @@ export default function Home() {
 
       {/* Footer Start */}
 
-
+      <WhatsAppWidget phoneNumber='9809517582' position="right"
+      />
       <Footer />
 
 
