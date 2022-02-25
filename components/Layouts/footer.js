@@ -7,9 +7,9 @@ const Footer = () => {
         <div className="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
 
           <div className="lg:w-3/6 md:w-1/2 w-full px-4">
-            <div id="responsibleHeading" className="flex justify-center md:justify-center pb-5 ">
+            <div id="responsibleHeading" className="flex justify-center md:justify-center pb-5 pt-0">
               <div id="responsibleHeading">
-                <Image src="/assets/logo/TDS-LOGO-STR.png" width={300} height={70}></Image>
+                <Image src="/assets/logo/kayaking-badge.png" width={300} height={250}></Image>
               </div>
             </div>
             <div id="footerSlogan" className="leading-3 p-2 flex justify-center pb-5">

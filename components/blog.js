@@ -57,7 +57,7 @@ const Blog = ({ blogs }) => {
         <Swiper
           pagination={pagination}
           spaceBetween={isSmallDisplay ? 30 : 10}
-          slidesPerView={isSmallDisplay ? 3 : 2}>
+          slidesPerView={isSmallDisplay ? 3 : 1}>
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
 
             {blogs.map((value, index) => {
