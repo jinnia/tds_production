@@ -22,7 +22,7 @@ const CardBody = ({ cardDetails }) => {
   // let imageSize = (isTablet == true) ? cardDetails.image.medium.url:(isExtraBigDisplay == true )?cardDetails.image.large.url:cardDetails.image.small.url
   return (
 
-    <div className="2xl:w-full lg:w-full md:w-full xl:w-full sm:mb-0 mb-18 hover:shadow-2xl p-5 cursor-pointer">
+    <div className="2xl:w-full lg:w-full md:w-full xl:w-full sm:mb-0 mb-18 hover:shadow-2xl cursor-pointer">
       <Image alt="content" src={cardDetails.image} width={500} height={400} className="rounded-lg" />
       <h2 className="text-xl font-medium title-font text-white mt-5 font-philosopher tracking-widest">{cardDetails.title}</h2>
       <p className="text-gray-200 leading-relaxed mt-2 font-milonga">{cardDetails.desc}</p>

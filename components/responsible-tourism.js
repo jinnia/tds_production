@@ -38,7 +38,7 @@ const ResponsibleTourism = ({ blogs }) => {
   const cardArray = [1, 2, 3, 4, 5];
   return (
     <section className="text-gray-700 body-font bg-white">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 py-10 mx-auto">
         <div className="flex flex-col text-center w-full mb-10">
 
           <h2 className="text-xs text-yellow-800 tracking-widest font-medium title-font mb-1 font-philosopher">TDS PRESENTS</h2>
