@@ -47,7 +47,37 @@ export default function Home() {
   })
   return (
     <>
+      <style global jsx>{`
+        .swiper-pagination-bullet {
+          width: 10px;
+          height: 10px;
+          text-align: right;
+          line-height: 20px;
+          font-size: 12px;
+          color: #000;
+          opacity: 1;
+          background: rgba(0, 0, 0, 0.2);
+        }
+        
+        .swiper-pagination-bullet-active {
+          color: #fff;
+          background: #049415 !important;
+        }
 
+
+       .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+          bottom: 0px;
+          left: 0;
+          width: 100%;
+          margin-top:10px;
+          text-align:right;
+      }
+      `}
+      </style>
+
+      <WhatsAppWidget phoneNumber='9809517582' position="right"
+        widgetWidth="300px"
+        widgetWidthMobile="260px" />
 
       <Menu />
       {/* Add home screen imagewith screen height */}
@@ -534,8 +564,6 @@ export default function Home() {
 
       {/* Footer Start */}
 
-      <WhatsAppWidget phoneNumber='9809517582' position="right"
-      />
       <Footer />
 
 

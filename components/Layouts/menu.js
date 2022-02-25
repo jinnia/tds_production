@@ -4,11 +4,11 @@ import Link from 'next/link'
 
 const Menu = () => {
   return (
-    <div id='top-menu' className=" z-10 w-full flex justify-between p-2 absolute bg-transparent md:pt-5 md:pb-5">
+    <div id='top-menu' className="z-10 w-full flex justify-between p-2 absolute bg-transparent md:pt-5 md:pb-5">
 
       <div className="hidden md:container md:mx-auto md:flex">
         <div id='logo-on-left-larger-screen' className="hidden md:flex md:w-1/4">
-          <Image src="/assets/logo/TDS-LOGO-STR.png" width={200} height={50}></Image>
+          <Image src="/assets/logo/Kayaking-badge.png" width={100} height={100}></Image>
           {/* <h1 className="text-white sm:bg-pink-900 md:bg-green-600 xl:bg-red-600 2xl:bg-blue-600 font-bold text-shadow-lg text-xl">TRAVELISTA</h1> */}
         </div>
 
