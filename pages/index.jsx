@@ -64,6 +64,7 @@ export default function Home() {
           background: #049415 !important;
         }
 
+
        .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
           bottom: 0px;
           left: 0;
@@ -71,10 +72,19 @@ export default function Home() {
           margin-top:10px;
           text-align:right;
       }
-      `}</style>
-      <WhatsAppWidget phoneNumber='9809517582' position="right"
-        widgetWidth="300px"
-        widgetWidthMobile="260px" />
+
+      .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+
+        bottom: -3px;
+      }
+      ._2iWL7 {
+        margin:8px
+      }
+      `}
+      </style>
+
+
+
       <Menu />
       {/* Add home screen imagewith screen height */}
       <div id="loadingScreen1" className="relative bg-white">
@@ -104,13 +114,13 @@ export default function Home() {
 
         <div id="main-typography-position" className="absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:container">
           <div id="main-typography" className="p-2">
-            <h1 id="main-heading" className='text-shadow-xl font-bold text-white text-6xl tracking-wider md:text-8xl sm:text-8xl md:mb-3 2xl:text-8xl font-philosopher text-transparent bg-clip-text bg-gradient-to-b from-green-400 to-slate-800 drop-shadow-2xl'>Welcome to Tour de South</h1>
+            <h1 id="main-heading" className='text-shadow-xl font-bold text-white text-6xl tracking-wider md:text-8xl sm:text-8xl md:mb-3 2xl:text-8xl font-philosopher text-transparent bg-clip-text bg-gradient-to-b from-green-100 to-green-400 drop-shadow-2xl'>Welcome to Tour de South</h1>
             <h1 className="text-shadow-sm text-white text-3xl  md:mb-3 2xl:text-4xl font-philosopher  tracking-wider">lorem ipsume dolar emit </h1>
-            <button className="bg-green-800 text-center text-white px-4 py-1 2xl:px-6 2xl:py-3 rounded-full shadow-2xl mt-2 font-thin text-sm flex 2xl:text-2xl">Call to Book
+            {/* <button className="bg-green-800 text-center text-white px-4 py-1 2xl:px-6 2xl:py-3 rounded-full shadow-2xl mt-2 font-thin text-sm flex 2xl:text-2xl">Call to Book
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 2xl:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
               </svg>
-            </button>
+            </button> */}
 
           </div>
 
@@ -559,8 +569,9 @@ export default function Home() {
       {/* responsible card end */}
 
       {/* Footer Start */}
-
-
+      <div className='fixed w-auto h-auto right-0 bottom-0 z-50 animate-bounce'>
+        <WhatsAppWidget phoneNumber='9809517582' position="right" />
+      </div>
       <Footer />
 
 
