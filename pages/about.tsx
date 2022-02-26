@@ -74,7 +74,7 @@ function About() {
 
                 <div className="sm:h-auto sm:flex sm:w-full sm:justify-start sm:items-start sm:align-top">
                     <div className="w-full flex sm:h-auto sm:w-1/2 sm:items-start sm:content-start sm:justify-start sm:bg-slate-500 md:bg-red-700 lg:bg-amber-400 sm:flex-col-reverse">
-                        <div className="h-auto  w-1/2 m-1 mt-4 sm:w-full">
+                        <div className="h-auto  w-1/2 m-1 mt-4 sm:w-full bg-purple-300 rounded-full filter blur-xl animation-blob">
                             <h1 className="text-center text-xl z-50 font-philosopher tracking-wider">CONNECT MORE PEOPLE WITH NATURE</h1>
                             <p className="p-2 text-sm font-milonga z-50">Tour de South started off as an effort to share what we feel
                                 of travel and to connect more people with nature. </p>
