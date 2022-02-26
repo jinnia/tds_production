@@ -110,7 +110,7 @@ function About() {
                 </div> */}
                 <div className="sm:flex sm:w-full sm:justify-start sm:items-start sm:align-top">
                     <div className="w-full flex  mt-0 sm:flex-col-reverse sm:h-auto sm:w-1/2 sm:items-start sm:content-start sm:justify-start">
-                        <div className="h-auto  w-1/2 m-1 sm:w-full sm:h-auto">
+                        <div className="h-auto  w-1/2 m-1 sm:w-full sm:h-auto flex flex-col align-middle items-center justify-center">
                             <h1 className="text-center text-xl  font-philosopher tracking-wide">WARMTH AND CHILLS</h1>
                             <p className="p-2 text-sm font-milonga">Our spaces will give you the warmth you need, and the chills you crave! </p>
                         </div>
