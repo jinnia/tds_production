@@ -570,7 +570,7 @@ export default function Home() {
 
       {/* Footer Start */}
       <div className='fixed w-auto h-auto right-0 bottom-0 z-50 animate-bounce'>
-        <WhatsAppWidget phoneNumber='9809517582' position="right" />
+        <WhatsAppWidget phoneNumber='919809517582' position="right" />
       </div>
       <Footer />
 
