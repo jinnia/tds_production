@@ -21,8 +21,8 @@ module.exports = withAnimations({
         '12': '3rem',
       },
       animation: {
-        blob: "blob 20s infinite",
-        blob_1: "blob_1 20s infinite",
+        blob: "blob 10s infinite",
+        blob_1: "blob_1 10s infinite",
       },
       keyframes: {
         blob: {

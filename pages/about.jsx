@@ -1,6 +1,8 @@
 import React from 'react';
 import Footer from '../components/Layouts/footer'
 import Menu from '../components/Layouts/menu'
+import WhatsAppWidget from 'react-whatsapp-widget'
+import 'react-whatsapp-widget/dist/index.css'
 
 function About() {
     return (
@@ -159,6 +161,9 @@ function About() {
                 <div className="w-full text-center font-philosopher tracking-wide text-2xl sm:pb-2 mt-5">
                     <h1>All You Need to do is allow us to host you</h1>
                 </div>
+            </div>
+            <div className='fixed w-auto h-auto right-0 bottom-0 z-50 animate-bounce'>
+                <WhatsAppWidget phoneNumber='919809517582' position="right" />
             </div>
             <Footer />
         </>

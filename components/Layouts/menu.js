@@ -20,7 +20,7 @@ const Menu = () => {
 
         <div className="hidden md:container md:mx-auto md:flex">
           <div id='logo-on-left-larger-screen' className="hidden md:flex md:w-1/4">
-            <Image src="/assets/logo/Kayaking-badge.png" width={100} height={100}></Image>
+            <Image src="/assets/logo/kayaking-badge-new-black.png" width={100} height={100}></Image>
             {/* <h1 className="text-white sm:bg-pink-900 md:bg-green-600 xl:bg-red-600 2xl:bg-blue-600 font-bold text-shadow-lg text-xl">TRAVELISTA</h1> */}
           </div>
 
@@ -64,7 +64,7 @@ const Menu = () => {
           </svg>
         </div>
         <div id='top-menu-center-logo' className="md:hidden  align-middle items-center flex">
-          <Image src="/assets/logo/Kayaking-badge.png" width={75} height={75}></Image>
+          <Image src="/assets/logo/kayaking-badge-new-black.png" width={80} height={75}></Image>
           {/* <h1 className="text-white sm:bg-pink-900 md:bg-green-600 xl:bg-red-600 2xl:bg-blue-600 font-bold text-shadow-lg text-xl">TRAVELISTA</h1> */}
         </div>
         <div id='top-menu-right-menu' className="md:hidden align-middle items-center flex">
@@ -80,77 +80,69 @@ const Menu = () => {
       </div>
 
 
-      <div className={mobileMenu ? 'w-3/4 h-full fixed bg-slate-800 z-50 flex flex-col animate-fadeInLeft ' : 'w-3/4 h-full fixed bg-slate-800 z-50 flex flex-col animate-fadeOutLeft'}>
+      <div className={mobileMenu ? 'w-3/4 h-full fixed bg-slate-800 z-50 flex flex-col animate-fadeInLeft ' : 'w-3/4 h-full fixed bg-slate-800 z-50 flex-col animate-fadeOutLeft'}>
 
-        <div id='mLogo' className='flex items-center justify-center pl-3'>
-          <Image src="/assets/logo/Kayaking-badge.png" width={150} height={150}></Image>
+        <div id='mLogo' className='flex items-center justify-center pl-3 pt-3 mb-16'>
+          <Image src="/assets/logo/kayaking-badge-new.png" width={100} height={100}></Image>
         </div>
 
-        <div className='flex justify-start  text-left pl-3 font-philosopher text-white mt-5 text-2xl tracking-widest '>
-          <svg
-            fill="#fff"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 50 50"
-            width="25px"
-            height="25px"
-            className='ml-2 mr-5'
-          >
-            <path d="M 24.962891 1.0546875 A 1.0001 1.0001 0 0 0 24.384766 1.2636719 L 1.3847656 19.210938 A 1.0005659 1.0005659 0 0 0 2.6152344 20.789062 L 4 19.708984 L 4 46 A 1.0001 1.0001 0 0 0 5 47 L 18.832031 47 A 1.0001 1.0001 0 0 0 19.158203 47 L 30.832031 47 A 1.0001 1.0001 0 0 0 31.158203 47 L 45 47 A 1.0001 1.0001 0 0 0 46 46 L 46 19.708984 L 47.384766 20.789062 A 1.0005657 1.0005657 0 1 0 48.615234 19.210938 L 41 13.269531 L 41 6 L 35 6 L 35 8.5859375 L 25.615234 1.2636719 A 1.0001 1.0001 0 0 0 24.962891 1.0546875 z M 25 3.3222656 L 44 18.148438 L 44 45 L 32 45 L 32 26 L 18 26 L 18 45 L 6 45 L 6 18.148438 L 25 3.3222656 z M 37 8 L 39 8 L 39 11.708984 L 37 10.146484 L 37 8 z M 20 28 L 30 28 L 30 45 L 20 45 L 20 28 z" />
-          </svg><Link href="/">Home</Link></div>
-        <div className='flex justify-start text-left pl-3  font-philosopher text-white mt-5 text-2xl tracking-widest'>
+        <div className='flex justify-start  text-left pl-3 font-philosopher text-white mt-5 text-xl tracking-widest '>
+          <svg width={25} height={25} className="mr-5 mt-1" fill="#ffffff" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <g data-name="1" id="_1">
+              <path d="M72.86,407.49H69.13a15,15,0,0,1-15-15V282.25C54.13,201.62,119.74,136,200.37,136h50.21V70.75a15,15,0,0,1,25-11.14L451.18,217.88a15,15,0,0,1,0,22.28L275.63,398.44a15,15,0,0,1-25-11.15V322H183.65a99.52,99.52,0,0,0-96.28,74.25A15,15,0,0,1,72.86,407.49ZM183.65,292h81.93a15,15,0,0,1,15,15v46.54L418.73,229,280.58,104.47V151a15,15,0,0,1-15,15H200.37A116.37,116.37,0,0,0,84.13,282.25v56.36A129.6,129.6,0,0,1,183.65,292Z" />
+            </g>
+          </svg>
+          <Link href="/">Home</Link></div>
+        <div className='flex justify-start text-left pl-3  font-philosopher text-white mt-5 text-xl tracking-widest'>
 
-          <svg
-            fill="#fff"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 50 50"
-            width="25px"
-            height="25px"
-            className='ml-2 mr-5'
-          >
-            <path d="M 24.962891 1.0546875 A 1.0001 1.0001 0 0 0 24.384766 1.2636719 L 1.3847656 19.210938 A 1.0005659 1.0005659 0 0 0 2.6152344 20.789062 L 4 19.708984 L 4 46 A 1.0001 1.0001 0 0 0 5 47 L 18.832031 47 A 1.0001 1.0001 0 0 0 19.158203 47 L 30.832031 47 A 1.0001 1.0001 0 0 0 31.158203 47 L 45 47 A 1.0001 1.0001 0 0 0 46 46 L 46 19.708984 L 47.384766 20.789062 A 1.0005657 1.0005657 0 1 0 48.615234 19.210938 L 41 13.269531 L 41 6 L 35 6 L 35 8.5859375 L 25.615234 1.2636719 A 1.0001 1.0001 0 0 0 24.962891 1.0546875 z M 25 3.3222656 L 44 18.148438 L 44 45 L 32 45 L 32 26 L 18 26 L 18 45 L 6 45 L 6 18.148438 L 25 3.3222656 z M 37 8 L 39 8 L 39 11.708984 L 37 10.146484 L 37 8 z M 20 28 L 30 28 L 30 45 L 20 45 L 20 28 z" />
+          <svg width={25} height={25} className="mr-5 mt-1" fill="#ffffff" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <g data-name="1" id="_1">
+              <path d="M72.86,407.49H69.13a15,15,0,0,1-15-15V282.25C54.13,201.62,119.74,136,200.37,136h50.21V70.75a15,15,0,0,1,25-11.14L451.18,217.88a15,15,0,0,1,0,22.28L275.63,398.44a15,15,0,0,1-25-11.15V322H183.65a99.52,99.52,0,0,0-96.28,74.25A15,15,0,0,1,72.86,407.49ZM183.65,292h81.93a15,15,0,0,1,15,15v46.54L418.73,229,280.58,104.47V151a15,15,0,0,1-15,15H200.37A116.37,116.37,0,0,0,84.13,282.25v56.36A129.6,129.6,0,0,1,183.65,292Z" />
+            </g>
           </svg>
 
           <Link href="about">About Us</Link></div>
-        <div className='flex justify-start text-left pl-3  font-philosopher text-white mt-5 text-2xl tracking-widest'><svg
-          fill="#fff"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 50 50"
-          width="25px"
-          height="25px"
-          className='ml-2 mr-5'
-        >
-          <path d="M 24.962891 1.0546875 A 1.0001 1.0001 0 0 0 24.384766 1.2636719 L 1.3847656 19.210938 A 1.0005659 1.0005659 0 0 0 2.6152344 20.789062 L 4 19.708984 L 4 46 A 1.0001 1.0001 0 0 0 5 47 L 18.832031 47 A 1.0001 1.0001 0 0 0 19.158203 47 L 30.832031 47 A 1.0001 1.0001 0 0 0 31.158203 47 L 45 47 A 1.0001 1.0001 0 0 0 46 46 L 46 19.708984 L 47.384766 20.789062 A 1.0005657 1.0005657 0 1 0 48.615234 19.210938 L 41 13.269531 L 41 6 L 35 6 L 35 8.5859375 L 25.615234 1.2636719 A 1.0001 1.0001 0 0 0 24.962891 1.0546875 z M 25 3.3222656 L 44 18.148438 L 44 45 L 32 45 L 32 26 L 18 26 L 18 45 L 6 45 L 6 18.148438 L 25 3.3222656 z M 37 8 L 39 8 L 39 11.708984 L 37 10.146484 L 37 8 z M 20 28 L 30 28 L 30 45 L 20 45 L 20 28 z" />
-        </svg><span>Destinations</span></div>
-        <div className='flex justify-start text-left pl-3  font-philosopher text-white mt-5 text-2xl tracking-widest'><svg
-          fill="#fff"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 50 50"
-          width="25px"
-          height="25px"
-          className='ml-2 mr-5'
-        >
-          <path d="M 24.962891 1.0546875 A 1.0001 1.0001 0 0 0 24.384766 1.2636719 L 1.3847656 19.210938 A 1.0005659 1.0005659 0 0 0 2.6152344 20.789062 L 4 19.708984 L 4 46 A 1.0001 1.0001 0 0 0 5 47 L 18.832031 47 A 1.0001 1.0001 0 0 0 19.158203 47 L 30.832031 47 A 1.0001 1.0001 0 0 0 31.158203 47 L 45 47 A 1.0001 1.0001 0 0 0 46 46 L 46 19.708984 L 47.384766 20.789062 A 1.0005657 1.0005657 0 1 0 48.615234 19.210938 L 41 13.269531 L 41 6 L 35 6 L 35 8.5859375 L 25.615234 1.2636719 A 1.0001 1.0001 0 0 0 24.962891 1.0546875 z M 25 3.3222656 L 44 18.148438 L 44 45 L 32 45 L 32 26 L 18 26 L 18 45 L 6 45 L 6 18.148438 L 25 3.3222656 z M 37 8 L 39 8 L 39 11.708984 L 37 10.146484 L 37 8 z M 20 28 L 30 28 L 30 45 L 20 45 L 20 28 z" />
-        </svg><span>Blog</span></div>
-        <div className='flex justify-start text-left pl-3  font-philosopher text-white mt-5 text-2xl tracking-widest'><svg
-          fill="#fff"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 50 50"
-          width="25px"
-          height="25px"
-          className='ml-2 mr-5'
-        >
-          <path d="M 24.962891 1.0546875 A 1.0001 1.0001 0 0 0 24.384766 1.2636719 L 1.3847656 19.210938 A 1.0005659 1.0005659 0 0 0 2.6152344 20.789062 L 4 19.708984 L 4 46 A 1.0001 1.0001 0 0 0 5 47 L 18.832031 47 A 1.0001 1.0001 0 0 0 19.158203 47 L 30.832031 47 A 1.0001 1.0001 0 0 0 31.158203 47 L 45 47 A 1.0001 1.0001 0 0 0 46 46 L 46 19.708984 L 47.384766 20.789062 A 1.0005657 1.0005657 0 1 0 48.615234 19.210938 L 41 13.269531 L 41 6 L 35 6 L 35 8.5859375 L 25.615234 1.2636719 A 1.0001 1.0001 0 0 0 24.962891 1.0546875 z M 25 3.3222656 L 44 18.148438 L 44 45 L 32 45 L 32 26 L 18 26 L 18 45 L 6 45 L 6 18.148438 L 25 3.3222656 z M 37 8 L 39 8 L 39 11.708984 L 37 10.146484 L 37 8 z M 20 28 L 30 28 L 30 45 L 20 45 L 20 28 z" />
-        </svg><span>Responsible Tourism</span></div>
-        <div className='flex justify-start text-left pl-3  font-philosopher text-white mt-5 text-2xl tracking-widest'><svg
-          fill="#fff"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 50 50"
-          width="25px"
-          height="25px"
-          className='ml-2 mr-5'
-        >
-          <path d="M 24.962891 1.0546875 A 1.0001 1.0001 0 0 0 24.384766 1.2636719 L 1.3847656 19.210938 A 1.0005659 1.0005659 0 0 0 2.6152344 20.789062 L 4 19.708984 L 4 46 A 1.0001 1.0001 0 0 0 5 47 L 18.832031 47 A 1.0001 1.0001 0 0 0 19.158203 47 L 30.832031 47 A 1.0001 1.0001 0 0 0 31.158203 47 L 45 47 A 1.0001 1.0001 0 0 0 46 46 L 46 19.708984 L 47.384766 20.789062 A 1.0005657 1.0005657 0 1 0 48.615234 19.210938 L 41 13.269531 L 41 6 L 35 6 L 35 8.5859375 L 25.615234 1.2636719 A 1.0001 1.0001 0 0 0 24.962891 1.0546875 z M 25 3.3222656 L 44 18.148438 L 44 45 L 32 45 L 32 26 L 18 26 L 18 45 L 6 45 L 6 18.148438 L 25 3.3222656 z M 37 8 L 39 8 L 39 11.708984 L 37 10.146484 L 37 8 z M 20 28 L 30 28 L 30 45 L 20 45 L 20 28 z" />
-        </svg><span>Contact</span></div>
+        <div className='flex justify-start text-left pl-3  font-philosopher text-white mt-5 text-xl tracking-widest'>
+          <svg width={25} height={25} className="mr-5 mt-1" fill="#ffffff" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <g data-name="1" id="_1">
+              <path d="M72.86,407.49H69.13a15,15,0,0,1-15-15V282.25C54.13,201.62,119.74,136,200.37,136h50.21V70.75a15,15,0,0,1,25-11.14L451.18,217.88a15,15,0,0,1,0,22.28L275.63,398.44a15,15,0,0,1-25-11.15V322H183.65a99.52,99.52,0,0,0-96.28,74.25A15,15,0,0,1,72.86,407.49ZM183.65,292h81.93a15,15,0,0,1,15,15v46.54L418.73,229,280.58,104.47V151a15,15,0,0,1-15,15H200.37A116.37,116.37,0,0,0,84.13,282.25v56.36A129.6,129.6,0,0,1,183.65,292Z" />
+            </g>
+          </svg>
+
+          <span>Destinations</span></div>
+        <div className='flex justify-start text-left pl-3  font-philosopher text-white mt-5 text-xl tracking-widest'>
+
+          <svg width={25} height={25} className="mr-5 mt-1" fill="#ffffff" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <g data-name="1" id="_1">
+              <path d="M72.86,407.49H69.13a15,15,0,0,1-15-15V282.25C54.13,201.62,119.74,136,200.37,136h50.21V70.75a15,15,0,0,1,25-11.14L451.18,217.88a15,15,0,0,1,0,22.28L275.63,398.44a15,15,0,0,1-25-11.15V322H183.65a99.52,99.52,0,0,0-96.28,74.25A15,15,0,0,1,72.86,407.49ZM183.65,292h81.93a15,15,0,0,1,15,15v46.54L418.73,229,280.58,104.47V151a15,15,0,0,1-15,15H200.37A116.37,116.37,0,0,0,84.13,282.25v56.36A129.6,129.6,0,0,1,183.65,292Z" />
+            </g>
+          </svg>
+          <span>Blog</span></div>
+        <div className='flex justify-start text-left pl-3  font-philosopher text-white mt-5 text-xl tracking-widest'>
+          <svg width={25} height={25} className="mr-5 mt-1" fill="#ffffff" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <g data-name="1" id="_1">
+              <path d="M72.86,407.49H69.13a15,15,0,0,1-15-15V282.25C54.13,201.62,119.74,136,200.37,136h50.21V70.75a15,15,0,0,1,25-11.14L451.18,217.88a15,15,0,0,1,0,22.28L275.63,398.44a15,15,0,0,1-25-11.15V322H183.65a99.52,99.52,0,0,0-96.28,74.25A15,15,0,0,1,72.86,407.49ZM183.65,292h81.93a15,15,0,0,1,15,15v46.54L418.73,229,280.58,104.47V151a15,15,0,0,1-15,15H200.37A116.37,116.37,0,0,0,84.13,282.25v56.36A129.6,129.6,0,0,1,183.65,292Z" />
+            </g>
+          </svg>
+          <span>Responsible Tourism</span></div>
+        <div className='flex justify-start text-left pl-3  font-philosopher text-white mt-5 text-xl tracking-widest'>
+          <svg width={25} height={25} className="mr-5 mt-1" fill="#ffffff" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+            <g data-name="1" id="_1">
+              <path d="M72.86,407.49H69.13a15,15,0,0,1-15-15V282.25C54.13,201.62,119.74,136,200.37,136h50.21V70.75a15,15,0,0,1,25-11.14L451.18,217.88a15,15,0,0,1,0,22.28L275.63,398.44a15,15,0,0,1-25-11.15V322H183.65a99.52,99.52,0,0,0-96.28,74.25A15,15,0,0,1,72.86,407.49ZM183.65,292h81.93a15,15,0,0,1,15,15v46.54L418.73,229,280.58,104.47V151a15,15,0,0,1-15,15H200.37A116.37,116.37,0,0,0,84.13,282.25v56.36A129.6,129.6,0,0,1,183.65,292Z" />
+            </g>
+          </svg>
+
+          <span>Contact</span></div>
+
+        <div className="absolute flex justify-center items-center align-middle bottom-16 text-center w-full text-white font-philosopher tracking-widest border-t-2 border-gray-500 pt-3">
+
+          <div className="flex justify-around items-center align-middle ">
+            <a href="https://www.facebook.com/"><img src="/assets/logo/fb.png" className="w-10 h-10 m-1" /></a>
+            <a href="https://www.instagram.com/"><img src="/assets/logo/instagram.png" className="w-10 h-10 m-1" /></a>
+            <a href="https://www.twitter.com/"><img src="/assets/logo/twitter.png" className="w-10 h-10 m-1" /></a>
+            <a href="https://www.youtube.com/"><img src="/assets/logo/youtube.png" className="w-10 h-10 m-1" /></a>
+          </div>
+        </div>
 
         <div onClick={() => setMobileMenu(false)} className="absolute bottom-4 text-center w-full text-white font-philosopher tracking-widest border-t-2 border-gray-500 pt-3">Close</div>
 
