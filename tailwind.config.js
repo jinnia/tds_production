@@ -20,20 +20,39 @@ module.exports = withAnimations({
         'extra-loose': '2.5',
         '12': '3rem',
       },
-      animation:{
-        blob:"blob 1s infinite"
+      animation: {
+        blob: "blob 20s infinite",
+        blob_1: "blob_1 20s infinite",
       },
-      keyframes:{
-        blob:{
-          "0%":{
-            transform:"scale(1)",
+      keyframes: {
+        blob: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
           },
-          "33%":{
-            transform:"scale(1.2)",
+          "33%": {
+            transform: "translate(10px, -20px) scale(1.1)",
           },
-          "66%":{
-            transform:"scale(0.8)"
-          }
+          "66%": {
+            transform: "translate(-20px, 20px) scale(0.9)",
+          },
+          "100%": {
+            transform: "tranlate(0px, 0px) scale(1)",
+          },
+        },
+
+        blob_1: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(40px, 80px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(80px, 20px) scale(0.9)",
+          },
+          "100%": {
+            transform: "tranlate(0px, 0px) scale(1)",
+          },
         },
       },
     },
