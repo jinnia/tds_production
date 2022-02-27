@@ -34,7 +34,7 @@ function About() {
                     </span>
 
                     <span className="flex h-3 w-3 z-30 absolute left-24 top-44">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                        <span className="animate-pulse animate-infinite absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-3 w-3 bg-green-400"></span>
                     </span>
 
@@ -73,8 +73,13 @@ function About() {
                 </div>
 
                 <div className="sm:h-auto sm:flex sm:w-full sm:justify-start sm:items-start sm:align-top">
-                    <div className="w-full flex sm:h-auto sm:w-1/2 sm:items-start sm:content-start sm:justify-start sm:bg-slate-500 md:bg-red-700 lg:bg-amber-400 sm:flex-col-reverse">
-                        <div className="h-auto  w-1/2 m-1 mt-4 sm:w-full bg-purple-300 rounded-full filter blur-xl animation-blob">
+                    <div className="w-full flex sm:h-auto sm:w-1/2 sm:items-start sm:content-start sm:justify-start  sm:flex-col-reverse relative">
+
+                        <div className="absolute top-0 left-4 w-40 h-40 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite animate-blob"></div>
+                        <div className="absolute top-5 left-50 w-44 h-44 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                        <div className="absolute -bottom-8 left-20 w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+
+                        <div className="h-auto  w-1/2 m-1 mt-4 sm:w-full ">
                             <h1 className="text-center text-xl z-50 font-philosopher tracking-wider">CONNECT MORE PEOPLE WITH NATURE</h1>
                             <p className="p-2 text-sm font-milonga z-50">Tour de South started off as an effort to share what we feel
                                 of travel and to connect more people with nature. </p>
@@ -83,7 +88,17 @@ function About() {
                             <img className="sm:object-contain sm:h-48 sm:w-96" src="/assets/connect_with_nature.png" />
                         </div>
                     </div>
-                    <div className="flex sm:flex-col sm:w-1/2">
+                    <div className="flex sm:flex-col sm:w-1/2 relative">
+
+                        <div className="absolute top-0 right-14 w-40 h-40 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite animate-blob_1"></div>
+                        <div className="absolute top-16 right-24 w-44 h-44 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob_1 animation-delay-2000"></div>
+                        <div className="absolute bottom-8 left-32 w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob_1 animation-delay-4000"></div>
+
+
+                        {/* <div className="absolute top-0 -left-4 w-40 h-40 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite animate-blob"></div>
+                        <div className="absolute top-5 left-64 w-44 h-44 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                        <div className="absolute -bottom-8 left-20 w-40 h-40 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div> */}
+
                         <div className="h-auto  w-1/2 m-1 sm:w-full sm:p-5 sm:flex sm:justify-center sm:align-middle sm:items-center">
                             <img className="sm:object-contain sm:h-48 sm:w-96" src="/assets/trekking.png" />
                         </div>
@@ -109,7 +124,15 @@ function About() {
                     </div>
                 </div> */}
                 <div className="sm:flex sm:w-full sm:justify-start sm:items-start sm:align-top">
-                    <div className="w-full flex  mt-0 sm:flex-col-reverse sm:h-auto sm:w-1/2 sm:items-start sm:content-start sm:justify-start">
+                    <div className="w-full flex  mt-0 sm:flex-col-reverse sm:h-auto sm:w-1/2 sm:items-start sm:content-start sm:justify-start relative">
+
+                        {/* <div className="absolute top-0 -left-4 w-60 h-60 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite animate-blob"></div>
+                        <div className="absolute top-5 left-64 w-60 h-60 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                        <div className="absolute -bottom-8 left-20 w-60 h-60 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div> */}
+                        <div className="absolute top-0 left-4 w-40 h-40 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite animate-blob"></div>
+                        <div className="absolute top-5 left-30 w-44 h-44 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                        <div className="absolute -bottom-8 left-20 w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+
                         <div className="h-auto  w-1/2 m-1 sm:w-full sm:h-auto flex flex-col align-middle items-center justify-center">
                             <h1 className="text-center text-xl  font-philosopher tracking-wide">WARMTH AND CHILLS</h1>
                             <p className="p-2 text-sm font-milonga">Our spaces will give you the warmth you need, and the chills you crave! </p>
@@ -118,7 +141,12 @@ function About() {
                             <img className="sm:object-contain sm:h-48 sm:w-96" src="/assets/warmth_and_chill.png" />
                         </div>
                     </div>
-                    <div className="flex  sm:flex-col sm:w-1/2">
+                    <div className="flex  sm:flex-col sm:w-1/2 relative">
+
+                        <div className="absolute top-0 right-4 w-40 h-40 bg-red-300 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite animate-blob"></div>
+                        <div className="absolute top-5 right-10 w-44 h-44 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                        <div className="absolute -bottom-8 right-20 w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+
                         <div className="h-auto  w-1/2 m-1 sm:w-full sm:p-5 sm:h-auto sm:flex sm:justify-center sm:align-middle sm:items-center">
                             <img className="mt-4 sm:object-contain sm:h-48 sm:w-96" src="/assets/tent.png" />
                         </div>
