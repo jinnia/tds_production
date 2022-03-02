@@ -9,7 +9,8 @@ module.exports = {
       fontFamily: {
         milonga: ['\'Milonga\', cursive;'],
         philosopher: ['\'Morning Glory\', cursive;'],
-        Battlebridge: ['Morning Glory']
+        Battlebridge: ['Morning Glory'],
+        Museo:['Museo']
       },
       borderRadius: {
         extraLarge: '2rem'
