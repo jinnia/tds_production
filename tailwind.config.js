@@ -8,9 +8,9 @@ module.exports = withAnimations({
   theme: {
     extend: {
       fontFamily: {
-        milonga: ['\'Milonga\', cursive;'],
-        philosopher: ['\'Morning Glory\', cursive;'],
-        Battlebridge: ['Morning Glory'],
+        milonga: ['\'Museo\', cursive;'],
+        philosopher: ['\'Museo\', cursive;'],
+        Battlebridge: ['Museo'],
         Museo:['Museo']
       },
       borderRadius: {
