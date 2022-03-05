@@ -68,7 +68,7 @@ function About() {
                     </div>
                     {/* <div className="w-full h-full sm:p-2"> */}
                     <div className="flex flex-col sm:w-1/2 sm:pl-3">
-                        <h1 className="inline-block text-center sm:text-2xl text-3xl  p-2 sm:text-left font-philosopher tracking-wider">SET OUT ON YOUR SEARCH FOR PLACES TO REJUVENATE WITH ADVENTURE</h1>
+                        <h1 className="inline-block text-center sm:text-2xl text-3xl font-semibold p-2 sm:text-left font-philosopher tracking-wider">SET OUT ON YOUR SEARCH FOR PLACES TO REJUVENATE WITH ADVENTURE</h1>
                         <p className="p-2 text-lg font-milonga">We are passionate minds seeking raw, wild and real. Living for us is travelling, creating
                             experiences and maintaining a strong bond with nature. </p>
                     </div>
