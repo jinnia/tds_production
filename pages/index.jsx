@@ -92,7 +92,7 @@ export default function Home() {
         {/* { isSmallDisplay && <h1>Messages: {count}</h1>} */}
         {/* <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" className="w-full h-screen object-cover"></img> */}
         {/* <img src="/assets/images/main.jpg" className="w-full h-screen object-cover"></img> */}
-        <img src="/assets/external/camping-in-steppe-2021-08-26-17-20-17-utc.jpg" className="flex w-full h-screen object-cover" />
+        <img src="/assets/external/camping-bg.jpg" className="flex w-full h-screen object-cover" />
         {
           // isSmallDisplay
           //  ?

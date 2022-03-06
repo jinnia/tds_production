@@ -109,7 +109,7 @@ const Menu = () => {
             </g>
           </svg>
 
-          <span>Destinations</span></div>
+          <Link href="destination">Destinations</Link></div>
         <div className='flex justify-start text-left pl-3  font-philosopher text-white mt-5 text-xl tracking-widest'>
 
           <svg width={25} height={25} className="mr-5 mt-1" fill="#ffffff" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
