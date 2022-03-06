@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Menu = () => {
 
-  const [mobileMenu, setMobileMenu] = useState(false)
+  const [mobileMenu, setMobileMenu] = useState('hidden')
 
 
 
@@ -80,7 +80,7 @@ const Menu = () => {
       </div>
 
 
-      <div className={mobileMenu ? 'w-3/4 h-full fixed bg-slate-800 z-50 flex flex-col animate-fadeInLeft ' : 'w-3/4 h-full fixed bg-slate-800 z-50 flex-col animate-fadeOutLeft'}>
+      <div className={mobileMenu == 'hidden' ? 'hidden' : mobileMenu ? 'w-3/4 h-full fixed bg-[#1d1635] z-50 flex flex-col animate-fadeInLeft ' : 'w-3/4 h-full fixed bg-slate-800 z-50 flex-col animate-fadeOutLeft'}>
 
         <div id='mLogo' className='flex items-center justify-center pl-3 pt-3 mb-16'>
           <Image src="/assets/logo/kayaking-badge-new.png" width={100} height={100}></Image>

@@ -43,12 +43,12 @@ function About() {
             <div className="container mx-auto flex flex-col h-full">
                 <div className="w-full h-80 flex relative">
 
-                    <Image src="/assets/CloudFarm/CloudFarm1.jpg" width={400} height={350} objectFit={'cover'} className="blur-[3px]" />
-                    <Image src="/assets/CloudFarm/CloudFarm2.jpg" width={400} height={350} objectFit={'cover'} className="blur-[3px]" />
-                    <Image src="/assets/CloudFarm/CloudFarm3.jpg" width={400} height={350} objectFit={'cover'} className="blur-[3px]" />
+                    <Image src="/assets/CloudFarm/CloudFarm1.jpg" width={400} height={350} objectFit={'cover'} />
+                    <Image src="/assets/CloudFarm/CloudFarm2.jpg" width={400} height={350} objectFit={'cover'} />
+                    <Image src="/assets/CloudFarm/CloudFarm3.jpg" width={400} height={350} objectFit={'cover'} />
 
                     <h1 className='font-semibold text-5xl text-white absolute font-philosopher left-12 top-1/2'>Cloud Farm</h1>
-                    <button class="text-white bg-[#17A294] border-0 py-2 px-6 focus:outline-none hover:bg-green-300 hover:text-black rounded absolute left-[9rem] bottom-[4rem]">Book</button>
+                    <button className="text-white bg-[#17A294] border-0 py-2 px-6 focus:outline-none hover:bg-green-300 hover:text-black rounded absolute left-[9rem] bottom-[4rem]">Book</button>
                 </div>
                 <div className="w-full h-full relative">
 
@@ -162,7 +162,7 @@ function About() {
 
                 </div>
             </div>
-            <div className='fixed bg-[#17A294] w-full h-auto right-0 bottom-0 z-50 animate-bounce p-3 font-philosopher animate-slideInUp animate-duration-1000'>
+            <div className='fixed bg-[#17A294] w-full h-32 right-0 bottom-0 z-50 animate-bounce p-3 font-philosopher animate-slideInUp animate-duration-1000'>
 
                 <div className='flex justify-between w-full'>
 
@@ -173,7 +173,7 @@ function About() {
                 </div>
 
             </div>
-            <div className='fixed w-auto h-auto right-0 bottom-10 z-50 animate-bounce'>
+            <div className='fixed w-auto h-auto right-0 bottom-32 z-50 animate-bounce'>
                 <WhatsAppWidget phoneNumber='919809517582' position="right" />
             </div>
             <Footer />
