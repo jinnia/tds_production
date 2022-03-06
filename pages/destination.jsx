@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Footer from '../components/Layouts/footer'
 import Menu from '../components/Layouts/menu'
 import WhatsAppWidget from 'react-whatsapp-widget'
@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import Image from 'next/image'
 
 function About() {
-
+    const [checkoutSelect, setCheckoutSelect] = useState('hidden')
     //write css styles for the swiper
     const styles = {
         swiper: {
@@ -52,10 +52,10 @@ function About() {
                 </div>
                 <div className="w-full h-full relative">
 
-                    <div className="absolute -top-10 right-0 w-full h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-2xl   animate-infinite animate-blob"></div>
-                    {/* <div className="absolute top-0 left-4 w-full h-80 bg-slate-200 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite animate-blob"></div> */}
-                    {/* <div className="absolute top-5 right-10 w-44 h-44 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-                    <div className="absolute -bottom-8 right-20 w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div> */}
+                    <div className="absolute -top-10 right-0 w-full h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-2xl   animate-infinite"></div>
+                    {/* <div className="absolute top-0 left-4 w-full h-80 bg-slate-200 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite"></div> */}
+                    {/* <div className="absolute top-5 right-10 w-44 h-44 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animation-delay-2000"></div>
+                    <div className="absolute -bottom-8 right-20 w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animation-delay-4000"></div> */}
 
 
 
@@ -70,7 +70,7 @@ function About() {
 
                             <div className="h-auto w-1/2 flex justify-center items-center align-middle m-1">
 
-                                <Image src="/assets/external/tent-cropped.jpg" width={200} height={380} objectFit={'cover'} className="rounded-md shadow-lg" />
+                                <Image src="/assets/external/tent-cropped.jpg" width={200} height={300} objectFit={'cover'} className="rounded-md shadow-lg" />
 
                             </div>
                             <div className="h-auto w-1/2">
@@ -85,8 +85,8 @@ function About() {
 
                     <div className='w-full relative'>
 
-                        <div className="absolute -top-10 right-0 w-full h-80 bg-slate-200 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite animate-blob"></div>
-                        {/* <div className="absolute top-0 left-4 w-full h-80 bg-slate-200 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite animate-blob"></div> */}
+                        <div className="absolute -top-10 right-0 w-full h-80 bg-slate-200 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite"></div>
+                        {/* <div className="absolute top-0 left-4 w-full h-80 bg-slate-200 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite"></div> */}
 
 
                         <div className='border-2 rounded-md border-slate-100 m-2 flex shadow-2xl'>
@@ -99,7 +99,7 @@ function About() {
                             </div>
                             <div className="h-auto w-1/2 flex justify-center items-center align-middle m-1">
 
-                                <Image src="/assets/external/forest.jpg" width={200} height={380} objectFit={'cover'} className="rounded-md shadow-lg" />
+                                <Image src="/assets/external/forest.jpg" width={200} height={300} objectFit={'cover'} className="rounded-md shadow-lg" />
 
                             </div>
 
@@ -110,7 +110,7 @@ function About() {
 
                     <div className='w-full relative'>
 
-                        <div className="absolute -top-10 right-0 w-full h-80 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite animate-blob"></div>
+                        <div className="absolute -top-10 right-0 w-full h-80 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite"></div>
 
 
 
@@ -118,7 +118,7 @@ function About() {
 
                             <div className="h-auto w-1/2 flex justify-center items-center align-middle m-1">
 
-                                <Image src="/assets/external/camping-food.jpg" width={200} height={380} objectFit={'cover'} className="rounded-md shadow-lg" />
+                                <Image src="/assets/external/camping-food.jpg" width={200} height={300} objectFit={'cover'} className="rounded-md shadow-lg" />
 
                             </div>
                             <div className="h-auto w-1/2">
@@ -134,7 +134,7 @@ function About() {
                     <div className='w-full relative'>
 
 
-                        <div className="absolute -top-10 right-0 w-full h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite animate-blob"></div>
+                        <div className="absolute -top-10 right-0 w-full h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite"></div>
 
 
                         <div className='border-2 rounded-md border-slate-100 m-2 flex shadow-2xl'>
@@ -147,7 +147,7 @@ function About() {
                             </div>
                             <div className="h-auto w-1/2 flex justify-center items-center align-middle m-1">
 
-                                <Image src="/assets/CloudFarm/CloudFarm1.jpg" width={200} height={380} objectFit={'cover'} className="rounded-md shadow-lg" />
+                                <Image src="/assets/CloudFarm/CloudFarm1.jpg" width={200} height={300} objectFit={'cover'} className="rounded-md shadow-lg" />
 
                             </div>
 
@@ -162,19 +162,34 @@ function About() {
 
                 </div>
             </div>
-            <div className='fixed bg-[#17A294] w-full h-32 right-0 bottom-0 z-50 animate-bounce p-3 font-philosopher animate-slideInUp animate-duration-1000'>
+            <div className='fixed bg-[#17A294] w-full h-auto right-0 bottom-0 z-50 animate-bounce p-3 font-philosopher animate-slideInUp animate-duration-1000'>
 
                 <div className='flex justify-between w-full'>
 
                     <h2 className='text-white font-semibold text-3xl flex align-middle items-center justify-start'>₹ 15,600 /-</h2>
                     <span className='text-white font-semibold text-md flex align-middle items-center justify-start'>Per Person</span>
 
-                    <button className="text-black bg-white border-0 py-2 px-6 focus:outline-none hover:bg-green-300 hover:text-black rounded font-bold">Book</button>
+                    <button className="text-black bg-white border-0 py-2 px-6 focus:outline-none hover:bg-green-300 hover:text-black rounded font-bold" onClick={() => setCheckoutSelect(true)}>Book</button>
                 </div>
 
             </div>
-            <div className='fixed w-auto h-auto right-0 bottom-32 z-50 animate-bounce'>
+            <div className='fixed w-auto h-auto right-0 bottom-12 z-50 animate-bounce'>
                 <WhatsAppWidget phoneNumber='919809517582' position="right" />
+            </div>
+
+
+            <div className={checkoutSelect == 'hidden' ? 'hidden' : checkoutSelect ? 'w-11/12 h-1/2 fixed bg-white z-50 flex  flex-col shadow-2xl m-auto top-0 left-0 right-0 bottom-0  rounded-xl animate-bounceIn ' : 'w-11/12 h-1/2 fixed bg-white z-50 flex-col shadow-2xl m-auto top-0 left-0 right-0 bottom-0 rounded-xl animate-bounceOut'}>
+
+                <div className='p-5'>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsam voluptate nostrum iure voluptatem blanditiis libero, nisi fugiat doloribus illo neque esse, velit, animi inventore eaque? Asperiores magni assumenda veniam!
+
+
+                </div>
+
+                <div className='bg-[#17A294] bottom-0 absolute w-full p-2 flex justify-around font-philosopher font-semibold'>
+                    <button className="text-black bg-white border-0 py-2 px-6 focus:outline-none hover:bg-green-300 hover:text-black rounded font-bold" onClick={() => setCheckoutSelect(false)}>Next</button>
+                    <button className="text-black bg-white border-0 py-2 px-6 focus:outline-none hover:bg-green-300 hover:text-black rounded font-bold" onClick={() => setCheckoutSelect(false)}>Close</button>
+                </div>
             </div>
             <Footer />
         </>
