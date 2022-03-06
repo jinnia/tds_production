@@ -82,7 +82,7 @@ const Footer = () => {
               <label htmlFor="footer-field" className="leading-7 text-sm text-gray-400">Placeholder</label>
               <input type="text" id="footer-field" name="footer-field" className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:ring-2 focus:ring-green-900 focus:bg-transparent focus:border-green-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
             </div>
-            <button className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-300 hover:text-black rounded">Button</button>
+            <button className="inline-flex text-white bg-[#17A294] border-0 py-2 px-6 focus:outline-none hover:bg-green-300 hover:text-black rounded">Button</button>
             <p className="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 text-center sm:text-left">Bitters chicharrones fanny pack
               <br className="lg:block hidden" />waistcoat green juice
             </p>

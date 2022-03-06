@@ -3,10 +3,30 @@ import Footer from '../components/Layouts/footer'
 import Menu from '../components/Layouts/menu'
 import WhatsAppWidget from 'react-whatsapp-widget'
 import 'react-whatsapp-widget/dist/index.css'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import Image from 'next/image'
 
 function About() {
+
+    //write css styles for the swiper
+    const styles = {
+        swiper: {
+            width: '100%',
+            height: '100%',
+            margin: '0 auto',
+            overflow: 'hidden',
+            position: 'relative',
+            zIndex: '1',
+            backgroundColor: '#fff',
+            boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
+            borderRadius: '10px',
+        },
+    }
     return (
         <>
+            <style global jsx>{`
+      `}
+            </style>
             <Menu />
             {/*
             <div className="w-full h-1/4 bg-slate-600 clear-both">
@@ -21,54 +41,139 @@ function About() {
 
 
             <div className="container mx-auto flex flex-col h-full">
-                <div className="w-full h-80">
-                    <img src="/assets/sunset.jpg" className='h-80' />
+                <div className="w-full h-80 flex relative">
+
+                    <Image src="/assets/CloudFarm/CloudFarm1.jpg" width={400} height={350} objectFit={'cover'} />
+                    <Image src="/assets/CloudFarm/CloudFarm2.jpg" width={400} height={350} objectFit={'cover'} />
+                    <Image src="/assets/CloudFarm/CloudFarm3.jpg" width={400} height={350} objectFit={'cover'} />
+
+                    <h1 className='font-semibold text-5xl text-white absolute font-philosopher left-12 top-1/2'>Cloud Farm</h1>
+                    <button className="text-white bg-[#17A294] border-0 py-2 px-6 focus:outline-none hover:bg-green-300 hover:text-black rounded absolute left-[9rem] bottom-[4rem]">Book</button>
                 </div>
-                <div className="w-full h-full">
-                    <h1 className="text-center font-bold text-4xl text-gray-700 p-2 font-philosopher tracking-widest">CLOUDFARM</h1>
-                    <p className="p-2 text-lg font-milonga">Cloudfarm will mesmerize all your senses without limits, we promise.
+                <div className="w-full h-full relative">
+
+                    <div className="absolute -top-10 right-0 w-full h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-2xl   animate-infinite animate-blob"></div>
+                    {/* <div className="absolute top-0 left-4 w-full h-80 bg-slate-200 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite animate-blob"></div> */}
+                    {/* <div className="absolute top-5 right-10 w-44 h-44 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+                    <div className="absolute -bottom-8 right-20 w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div> */}
+
+
+
+                    <p className="p-2 text-xl font-philosopher font-bold text-center text-black ">
+
+                        Cloudfarm will mesmerize all your senses without limits, we promise.
                         You'll wake up amidst the clouds, with the rays of the sun kissing you. You'll find yourself in a dream.</p>
-                    <div className="flex">
-                        <div className="h-auto  w-1/2 m-1 mt-4">
-                            <img src="/assets/connect_with_nature.png" className="filter-none" />
+
+                    <div className='w-full'>
+
+                        <div className='border-2 rounded-md border-slate-100 m-2 flex shadow-2xl'>
+
+                            <div className="h-auto w-1/2 flex justify-center items-center align-middle m-1">
+
+                                <Image src="/assets/external/tent-cropped.jpg" width={200} height={380} objectFit={'cover'} className="rounded-md shadow-lg" />
+
+                            </div>
+                            <div className="h-auto w-1/2">
+                                <p className="p-2 text-lg font-milonga">Tents await you at the site, with a view that is
+                                    breathtaking. Sunrise and sunset points will give you a 360° view into the hills and the horizon. </p>
+                            </div>
+
                         </div>
-                        <div className="h-auto w-1/2 m-1">
-                            <p className="p-2 text-lg font-milonga">Tents await you at the site, with a view that is
-                                breathtaking. Sunrise and sunset points will give you a 360° view into the hills and the horizon. </p>
-                        </div>
+
                     </div>
-                    <div className="flex  p-4">
-                        <div className="h-auto  w-1/2 m-1">
-                            <p className="p-2 text-lg font-milonga">You can find yourself surrounded with the colours of wild flora
-                                and the sounds of the wild. Be it with your loved ones or a solo trip, we assure you rest, reflection
-                                and solitude.  </p>
+
+
+                    <div className='w-full relative'>
+
+                        <div className="absolute -top-10 right-0 w-full h-80 bg-slate-200 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite animate-blob"></div>
+                        {/* <div className="absolute top-0 left-4 w-full h-80 bg-slate-200 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite animate-blob"></div> */}
+
+
+                        <div className='border-2 rounded-md border-slate-100 m-2 flex shadow-2xl'>
+
+
+                            <div className="h-auto w-1/2">
+                                <p className="p-2 text-lg font-milonga">You can find yourself surrounded with the colours of wild flora
+                                    and the sounds of the wild. Be it with your loved ones or a solo trip, we assure you rest, reflection
+                                    and solitude.  </p>
+                            </div>
+                            <div className="h-auto w-1/2 flex justify-center items-center align-middle m-1">
+
+                                <Image src="/assets/external/forest.jpg" width={200} height={380} objectFit={'cover'} className="rounded-md shadow-lg" />
+
+                            </div>
+
                         </div>
-                        <div className="h-60 w-1/2 m-1">
-                            <img src="/assets/trekking.png" />
-                        </div>
+
                     </div>
-                    <div className="flex  p-4 mt-8">
-                        <div className="h-auto  w-1/2 m-1">
-                            <img src="/assets/warmth_and_chill.png" />
+
+
+                    <div className='w-full relative'>
+
+                        <div className="absolute -top-10 right-0 w-full h-80 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite animate-blob"></div>
+
+
+
+                        <div className='border-2 rounded-md border-slate-100 m-2 flex shadow-2xl'>
+
+                            <div className="h-auto w-1/2 flex justify-center items-center align-middle m-1">
+
+                                <Image src="/assets/external/camping-food.jpg" width={200} height={380} objectFit={'cover'} className="rounded-md shadow-lg" />
+
+                            </div>
+                            <div className="h-auto w-1/2">
+                                <p className="p-2 text-lg font-milonga">Our package welcomes you with an evening tea at the campsite,
+                                    sunset trek, dinner for the night. The day break starts with sunrise trek and dispersing with breakfast.</p>
+                            </div>
+
                         </div>
-                        <div className="h-auto w-1/2 m-1">
-                            <p className="p-2 text-lg font-milonga">Our package welcomes you with an evening tea at the campsite,
-                                sunset trek, dinner for the night. The day break starts with sunrise trek and dispersing with breakfast.</p>
-                        </div>
+
                     </div>
-                    <div className="flex  p-4">
-                        <div className="h-auto  w-1/2 m-1">
-                            <p className="p-2 text-lg font-milonga">Your safety is our priority. All tents are pitched prior to the
-                                arrival of guests, and washrooms are within the surroundings. We have a kitchen that will provide you with
-                                hot water and kattan  to keep you warm. </p>
+
+
+                    <div className='w-full relative'>
+
+
+                        <div className="absolute -top-10 right-0 w-full h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite animate-blob"></div>
+
+
+                        <div className='border-2 rounded-md border-slate-100 m-2 flex shadow-2xl'>
+
+
+                            <div className="h-auto w-1/2">
+                                <p className="p-2 text-lg font-milonga">Your safety is our priority. All tents are pitched prior to the
+                                    arrival of guests, and washrooms are within the surroundings. We have a kitchen that will provide you with
+                                    hot water and kattan  to keep you warm.  </p>
+                            </div>
+                            <div className="h-auto w-1/2 flex justify-center items-center align-middle m-1">
+
+                                <Image src="/assets/CloudFarm/CloudFarm1.jpg" width={200} height={380} objectFit={'cover'} className="rounded-md shadow-lg" />
+
+                            </div>
+
                         </div>
-                        <div className="h-60 w-1/2 m-1">
-                            <img className="mt-4" src="/assets/tent.png" />
-                        </div>
+
                     </div>
+
+
+
+
+
+
                 </div>
             </div>
-            <div className='fixed w-auto h-auto right-0 bottom-0 z-50 animate-bounce'>
+            <div className='fixed bg-[#17A294] w-full h-32 right-0 bottom-0 z-50 animate-bounce p-3 font-philosopher animate-slideInUp animate-duration-1000'>
+
+                <div className='flex justify-between w-full'>
+
+                    <h2 className='text-white font-semibold text-3xl flex align-middle items-center justify-start'>₹ 15,600 /-</h2>
+                    <span className='text-white font-semibold text-md flex align-middle items-center justify-start'>Per Person</span>
+
+                    <button className="text-black bg-white border-0 py-2 px-6 focus:outline-none hover:bg-green-300 hover:text-black rounded font-bold">Book</button>
+                </div>
+
+            </div>
+            <div className='fixed w-auto h-auto right-0 bottom-32 z-50 animate-bounce'>
                 <WhatsAppWidget phoneNumber='919809517582' position="right" />
             </div>
             <Footer />

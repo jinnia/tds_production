@@ -23,7 +23,7 @@ const ResponsibleTourismBody = ({ cardDetails }) => {
       <img className="rounded-lg w-full h-60 2xl:h-72  object-cover shadow-2xl mb-5 hover:scale-105 transition" src={imageSize}></img>
       <h2 className="text-lg sm:text-xl text-gray-600 font-medium title-font mb-2 font-philosopher tracking-wider">{cardDetails.title}</h2>
       <p className="leading-relaxed text-base mb-4 font-milonga">{cardDetails.desc}</p>
-      <a className="text-green-600 inline-flex items-center font-philosopher tracking-wider">Learn More
+      <a className="text-[#17A294] inline-flex items-center font-philosopher tracking-wider">Learn More
         <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
           <path d="M5 12h14M12 5l7 7-7 7" />
         </svg>

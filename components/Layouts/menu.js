@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Menu = () => {
 
-  const [mobileMenu, setMobileMenu] = useState(false)
+  const [mobileMenu, setMobileMenu] = useState('hidden')
 
 
 
@@ -20,7 +20,7 @@ const Menu = () => {
 
         <div className="hidden md:container md:mx-auto md:flex">
           <div id='logo-on-left-larger-screen' className="hidden md:flex md:w-1/4">
-            <Image src="/assets/logo/kayaking-badge-new-black.png" width={100} height={100}></Image>
+            <Image src="/assets/logo/kayaking-badge-new.png" width={100} height={100}></Image>
             {/* <h1 className="text-white sm:bg-pink-900 md:bg-green-600 xl:bg-red-600 2xl:bg-blue-600 font-bold text-shadow-lg text-xl">TRAVELISTA</h1> */}
           </div>
 
@@ -64,7 +64,7 @@ const Menu = () => {
           </svg>
         </div>
         <div id='top-menu-center-logo' className="md:hidden  align-middle items-center flex">
-          <Image src="/assets/logo/kayaking-badge-new-black.png" width={80} height={75}></Image>
+          <Image src="/assets/logo/kayaking-badge-new.png" width={80} height={75}></Image>
           {/* <h1 className="text-white sm:bg-pink-900 md:bg-green-600 xl:bg-red-600 2xl:bg-blue-600 font-bold text-shadow-lg text-xl">TRAVELISTA</h1> */}
         </div>
         <div id='top-menu-right-menu' className="md:hidden align-middle items-center flex">
@@ -80,7 +80,7 @@ const Menu = () => {
       </div>
 
 
-      <div className={mobileMenu ? 'w-3/4 h-full fixed bg-slate-800 z-50 flex flex-col animate-fadeInLeft ' : 'w-3/4 h-full fixed bg-slate-800 z-50 flex-col animate-fadeOutLeft'}>
+      <div className={mobileMenu == 'hidden' ? 'hidden' : mobileMenu ? 'w-3/4 h-full fixed bg-[#1d1635] z-50 flex flex-col animate-fadeInLeft ' : 'w-3/4 h-full fixed bg-slate-800 z-50 flex-col animate-fadeOutLeft'}>
 
         <div id='mLogo' className='flex items-center justify-center pl-3 pt-3 mb-16'>
           <Image src="/assets/logo/kayaking-badge-new.png" width={100} height={100}></Image>
@@ -109,7 +109,7 @@ const Menu = () => {
             </g>
           </svg>
 
-          <span>Destinations</span></div>
+          <Link href="destination">Destinations</Link></div>
         <div className='flex justify-start text-left pl-3  font-philosopher text-white mt-5 text-xl tracking-widest'>
 
           <svg width={25} height={25} className="mr-5 mt-1" fill="#ffffff" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
