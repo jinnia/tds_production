@@ -82,7 +82,7 @@ function About() {
                         <div className="absolute -bottom-8 left-20 w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
 
                         <div className="h-auto  w-1/2 m-1 mt-4 sm:w-full ">
-                            <h1 className="text-center text-xl z-50 font-philosopher tracking-wider">CONNECT MORE PEOPLE WITH NATURE</h1>
+                            <h1 className="text-center text-xl z-50 font-philosopher tracking-wider font-semibold">CONNECT MORE PEOPLE WITH NATURE</h1>
                             <p className="p-2 text-sm font-milonga z-50">Tour de South started off as an effort to share what we feel
                                 of travel and to connect more people with nature. </p>
                         </div>
@@ -105,7 +105,7 @@ function About() {
                             <img className="sm:object-contain sm:h-48 sm:w-96" src="/assets/trekking.png" />
                         </div>
                         <div className="h-60 w-1/2 m-1 sm:w-full sm:h-auto flex flex-col align-middle justify-center">
-                            <h1 className="text-center text-xl font-philosopher tracking-wider">ADVENTURE FILLED WITH TREKKING</h1>
+                            <h1 className="text-center text-xl font-philosopher tracking-wider font-semibold">ADVENTURE FILLED WITH TREKKING</h1>
                             <p className="p-2 text-sm font-milonga ">Exclusive offbeat locations and adventure
                                 filled trekking experiences, with all experiences bringing you closer to the planet.  </p>
                         </div>
@@ -136,7 +136,7 @@ function About() {
                         <div className="absolute -bottom-8 left-20 w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
 
                         <div className="h-auto  w-1/2 m-1 sm:w-full sm:h-auto flex flex-col align-middle items-center justify-center">
-                            <h1 className="text-center text-xl  font-philosopher tracking-wide">WARMTH AND CHILLS</h1>
+                            <h1 className="text-center text-xl  font-philosopher tracking-wide font-semibold">WARMTH AND CHILLS</h1>
                             <p className="p-2 text-sm font-milonga">Our spaces will give you the warmth you need, and the chills you crave! </p>
                         </div>
                         <div className="h-52 w-1/2 m-1 sm:w-full sm:h-auto sm:flex sm:justify-center sm:align-middle sm:items-center">
@@ -153,12 +153,12 @@ function About() {
                             <img className="mt-4 sm:object-contain sm:h-48 sm:w-96" src="/assets/tent.png" />
                         </div>
                         <div className="h-40 w-1/2 m-1 sm:w-full sm:h-auto">
-                            <h1 className="text-center text-xl  font-philosopher tracking-wide">INDOOR AND OUTDOOR STAY EXPERIENCES</h1>
+                            <h1 className="text-center text-xl  font-philosopher tracking-wide font-semibold">INDOOR AND OUTDOOR STAY EXPERIENCES</h1>
                             <p className="p-2 text-sm font-milonga">It will revive your soul, freshen your breathe and cheer you up.  </p>
                         </div>
                     </div>
                 </div>
-                <div className="w-full text-center font-philosopher tracking-wide text-2xl sm:pb-2 mt-5">
+                <div className="w-full text-center font-philosopher tracking-wide text-2xl sm:pb-2 mt-5  font-semibold">
                     <h1>All You Need to do is allow us to host you</h1>
                 </div>
             </div>

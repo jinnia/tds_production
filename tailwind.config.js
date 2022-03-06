@@ -11,7 +11,7 @@ module.exports = withAnimations({
         milonga: ['\'Museo\', cursive;'],
         philosopher: ['\'Museo\', cursive;'],
         Battlebridge: ['Museo'],
-        Museo:['Museo']
+        Museo: ['Museo']
       },
       borderRadius: {
         extraLarge: '2rem'
@@ -24,6 +24,7 @@ module.exports = withAnimations({
       animation: {
         blob: "blob 10s infinite",
         blob_1: "blob_1 10s infinite",
+        tilt: 'tilt 10s infinite linear',
       },
       keyframes: {
         blob: {
@@ -53,6 +54,21 @@ module.exports = withAnimations({
           },
           "100%": {
             transform: "tranlate(0px, 0px) scale(1)",
+          },
+        },
+
+        tilt: {
+          '0%, 50%, 100%': {
+            transform: 'rotate(0deg)',
+          },
+          '25%': {
+            transform: 'rotate(0.8deg)',
+          },
+          '75%': {
+            transform: 'rotate(-0.8deg)',
+          },
+          '100%': {
+            transform: 'rotate(0deg)',
           },
         },
       },

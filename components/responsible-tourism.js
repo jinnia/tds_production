@@ -59,7 +59,7 @@ const ResponsibleTourism = ({ blogs }) => {
           </div>
         </Swiper>
 
-        <button className="flex mx-auto mt-10 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">View More</button>
+        <button className="flex mx-auto mt-10 text-white bg-[#17A294] border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">View More</button>
       </div>
     </section>
   )

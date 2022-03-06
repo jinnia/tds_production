@@ -166,7 +166,7 @@ export default function Home() {
               >
                 <SwiperSlide>
                   <div className="">
-                    <button className="  outline-none 2xl:h-14 w-full bg-green-500 text-center text-white px-4 py-2 rounded-full shadow-2xl mt-2 font-thin text-sm flex  justify-around items-center">
+                    <button className="  outline-none 2xl:h-14 w-full bg-[#17A294] text-center text-white px-4 py-2 rounded-full shadow-2xl mt-2 font-thin text-sm flex  justify-around items-center">
                       <Image src="/assets/icons/mountain.svg" alt="Hill" width={40} height={isExtraBigDisplay ? 40 : 25} />
                       <div className="text-white align-middle items-center 2xl:text-xl  font-milonga tracking-widest">Hill</div>
                     </button>

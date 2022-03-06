@@ -20,7 +20,7 @@ const Menu = () => {
 
         <div className="hidden md:container md:mx-auto md:flex">
           <div id='logo-on-left-larger-screen' className="hidden md:flex md:w-1/4">
-            <Image src="/assets/logo/kayaking-badge-new-black.png" width={100} height={100}></Image>
+            <Image src="/assets/logo/kayaking-badge-new.png" width={100} height={100}></Image>
             {/* <h1 className="text-white sm:bg-pink-900 md:bg-green-600 xl:bg-red-600 2xl:bg-blue-600 font-bold text-shadow-lg text-xl">TRAVELISTA</h1> */}
           </div>
 
@@ -64,7 +64,7 @@ const Menu = () => {
           </svg>
         </div>
         <div id='top-menu-center-logo' className="md:hidden  align-middle items-center flex">
-          <Image src="/assets/logo/kayaking-badge-new-black.png" width={80} height={75}></Image>
+          <Image src="/assets/logo/kayaking-badge-new.png" width={80} height={75}></Image>
           {/* <h1 className="text-white sm:bg-pink-900 md:bg-green-600 xl:bg-red-600 2xl:bg-blue-600 font-bold text-shadow-lg text-xl">TRAVELISTA</h1> */}
         </div>
         <div id='top-menu-right-menu' className="md:hidden align-middle items-center flex">
