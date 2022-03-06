@@ -162,7 +162,7 @@ function About() {
 
                 </div>
             </div>
-            <div className='fixed bg-[#17A294] w-full h-auto right-0 bottom-0 z-50 animate-bounce p-3 font-philosopher animate-slideInUp animate-duration-1000'>
+            <div className='fixed bg-[#17A294] w-full h-auto right-0 bottom-0 z-30 animate-bounce p-3 font-philosopher animate-slideInUp animate-duration-1000'>
 
                 <div className='flex justify-between w-full'>
 
@@ -187,8 +187,8 @@ function About() {
                 </div>
 
                 <div className='bg-[#17A294] bottom-0 absolute w-full p-2 flex justify-around font-philosopher font-semibold'>
-                    <button className="text-black bg-white border-0 py-2 px-6 focus:outline-none hover:bg-green-300 hover:text-black rounded font-bold" onClick={() => setCheckoutSelect(false)}>Next</button>
-                    <button className="text-black bg-white border-0 py-2 px-6 focus:outline-none hover:bg-green-300 hover:text-black rounded font-bold" onClick={() => setCheckoutSelect(false)}>Close</button>
+                    <button className="text-white bg-transparent border-0 py-2 px-6 focus:outline-none hover:bg-green-100 hover:text-black rounded font-bold text-2xl" onClick={() => setCheckoutSelect(false)}>Next</button>
+                    <button className="text-white bg-transparent border-0 py-2 px-6 focus:outline-none hover:bg-green-100 hover:text-black rounded font-bold text-2xl" onClick={() => setCheckoutSelect(false)}>Close</button>
                 </div>
             </div>
             <Footer />
