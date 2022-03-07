@@ -69,7 +69,7 @@ function About() {
                     {/* <div className="w-full h-full sm:p-2"> */}
                     <div className="flex flex-col sm:w-1/2 sm:pl-3 relative">
 
-                        <div className="absolute -top-10 w-full h-80 bg-blue-700 rounded-full mix-blend-multiply filter blur-xl opacity-25  animate-infinite animate-blob"></div>
+                        <div className="absolute -top-10 w-full h-80 bg-blue-700 rounded-full mix-blend-multiply filter blur-xl opacity-25  animate-infinite"></div>
                         <h1 className="inline-block text-center sm:text-2xl text-3xl font-semibold p-2 sm:text-left font-philosopher tracking-wider">SET OUT ON YOUR SEARCH FOR PLACES TO REJUVENATE WITH ADVENTURE</h1>
                         <p className="p-2 text-lg font-milonga">We are passionate minds seeking raw, wild and real. Living for us is travelling, creating
                             experiences and maintaining a strong bond with nature. </p>
@@ -79,9 +79,9 @@ function About() {
                 <div className="sm:h-auto sm:flex sm:w-full sm:justify-start sm:items-start sm:align-top">
                     <div className="w-full flex sm:h-auto sm:w-1/2 sm:items-start sm:content-start sm:justify-start  sm:flex-col-reverse relative">
 
-                        <div className="absolute top-0 left-4 w-40 h-40 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-25  animate-infinite animate-blob"></div>
-                        <div className="absolute top-5 left-50 w-44 h-44 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-25 animate-blob animation-delay-2000"></div>
-                        <div className="absolute -bottom-8 left-20 w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-25 animate-blob animation-delay-4000"></div>
+                        <div className="absolute top-0 left-4 w-40 h-40 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-25  animate-infinite"></div>
+                        <div className="absolute top-5 left-50 w-44 h-44 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-25 animation-delay-2000"></div>
+                        <div className="absolute -bottom-8 left-20 w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-25 animation-delay-4000"></div>
 
                         <div className="h-auto  w-1/2 m-1 mt-4 sm:w-full ">
                             <h1 className="text-center text-xl z-50 font-philosopher tracking-wider font-semibold">CONNECT MORE PEOPLE WITH NATURE</h1>
@@ -94,14 +94,14 @@ function About() {
                     </div>
                     <div className="flex sm:flex-col sm:w-1/2 relative">
 
-                        <div className="absolute top-0 right-14 w-40 h-40 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-25  animate-infinite animate-blob_1"></div>
-                        <div className="absolute top-16 right-24 w-44 h-44 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-25 animate-blob_1 animation-delay-2000"></div>
-                        <div className="absolute bottom-8 left-32 w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-25 animate-blob_1 animation-delay-4000"></div>
+                        <div className="absolute top-0 right-14 w-40 h-40 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-25  animate-infinite"></div>
+                        <div className="absolute top-16 right-24 w-44 h-44 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-25 animation-delay-2000"></div>
+                        <div className="absolute bottom-8 left-32 w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-25 animation-delay-4000"></div>
 
 
-                        {/* <div className="absolute top-0 -left-4 w-40 h-40 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-25  animate-infinite animate-blob"></div>
-                        <div className="absolute top-5 left-64 w-44 h-44 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-25 animate-blob animation-delay-2000"></div>
-                        <div className="absolute -bottom-8 left-20 w-40 h-40 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-25 animate-blob animation-delay-4000"></div> */}
+                        {/* <div className="absolute top-0 -left-4 w-40 h-40 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-25  animate-infinite"></div>
+                        <div className="absolute top-5 left-64 w-44 h-44 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-25 animation-delay-2000"></div>
+                        <div className="absolute -bottom-8 left-20 w-40 h-40 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-25 animation-delay-4000"></div> */}
 
                         <div className="h-auto  w-1/2 m-1 sm:w-full sm:p-5 sm:flex sm:justify-center sm:align-middle sm:items-center">
                             <img className="sm:object-contain sm:h-48 sm:w-96" src="/assets/trekking.png" />
@@ -130,12 +130,12 @@ function About() {
                 <div className="sm:flex sm:w-full sm:justify-start sm:items-start sm:align-top">
                     <div className="w-full flex  mt-0 sm:flex-col-reverse sm:h-auto sm:w-1/2 sm:items-start sm:content-start sm:justify-start relative">
 
-                        {/* <div className="absolute top-0 -left-4 w-60 h-60 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-25  animate-infinite animate-blob"></div>
-                        <div className="absolute top-5 left-64 w-60 h-60 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-25 animate-blob animation-delay-2000"></div>
-                        <div className="absolute -bottom-8 left-20 w-60 h-60 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-25 animate-blob animation-delay-4000"></div> */}
-                        <div className="absolute top-0 left-4 w-40 h-40 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-25  animate-infinite animate-blob"></div>
-                        <div className="absolute top-5 left-30 w-44 h-44 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-25 animate-blob animation-delay-2000"></div>
-                        <div className="absolute -bottom-8 left-20 w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-25 animate-blob animation-delay-4000"></div>
+                        {/* <div className="absolute top-0 -left-4 w-60 h-60 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-25  animate-infinite"></div>
+                        <div className="absolute top-5 left-64 w-60 h-60 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-25 animation-delay-2000"></div>
+                        <div className="absolute -bottom-8 left-20 w-60 h-60 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-25 animation-delay-4000"></div> */}
+                        <div className="absolute top-0 left-4 w-40 h-40 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-25  animate-infinite"></div>
+                        <div className="absolute top-5 left-30 w-44 h-44 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-25 animation-delay-2000"></div>
+                        <div className="absolute -bottom-8 left-20 w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-25 animation-delay-4000"></div>
 
                         <div className="h-auto  w-1/2 m-1 sm:w-full sm:h-auto flex flex-col align-middle items-center justify-center">
                             <h1 className="text-center text-xl  font-philosopher tracking-wide font-semibold">WARMTH AND CHILLS</h1>
@@ -147,9 +147,9 @@ function About() {
                     </div>
                     <div className="flex  sm:flex-col sm:w-1/2 relative">
 
-                        <div className="absolute top-0 right-4 w-40 h-40 bg-red-300 rounded-full mix-blend-multiply filter blur-xl opacity-25  animate-infinite animate-blob"></div>
-                        <div className="absolute top-5 right-10 w-44 h-44 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-25 animate-blob animation-delay-2000"></div>
-                        <div className="absolute -bottom-8 right-20 w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-25 animate-blob animation-delay-4000"></div>
+                        <div className="absolute top-0 right-4 w-40 h-40 bg-red-300 rounded-full mix-blend-multiply filter blur-xl opacity-25  animate-infinite"></div>
+                        <div className="absolute top-5 right-10 w-44 h-44 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-25 animation-delay-2000"></div>
+                        <div className="absolute -bottom-8 right-20 w-40 h-40 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-25 animation-delay-4000"></div>
 
                         <div className="h-auto  w-1/2 m-1 sm:w-full sm:p-5 sm:h-auto sm:flex sm:justify-center sm:align-middle sm:items-center">
                             <img className="mt-4 sm:object-contain sm:h-48 sm:w-96" src="/assets/tent.png" />
