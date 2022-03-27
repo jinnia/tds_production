@@ -43,9 +43,9 @@ function About() {
             <div className="container mx-auto flex flex-col h-full">
                 <div className="w-full h-80 flex relative">
 
-                    <Image src="/assets/CloudFarm/CloudFarm1.jpg" width={400} height={350} objectFit={'cover'} />
-                    <Image src="/assets/CloudFarm/CloudFarm2.jpg" width={400} height={350} objectFit={'cover'} />
-                    <Image src="/assets/CloudFarm/CloudFarm3.jpg" width={400} height={350} objectFit={'cover'} />
+                    <Image src="/assets/CloudFarm/CloudFarm1.jpg" width={400} height={350} objectFit={'cover'} className="blur-sm" />
+                    <Image src="/assets/CloudFarm/CloudFarm2.jpg" width={400} height={350} objectFit={'cover'} className="blur-sm" />
+                    <Image src="/assets/CloudFarm/CloudFarm3.jpg" width={400} height={350} objectFit={'cover'} className="blur-sm" />
 
                     <h1 className='font-semibold text-5xl text-white absolute font-philosopher left-12 top-1/2'>Cloud Farm</h1>
                     <button className="text-white bg-[#17A294] border-0 py-2 px-6 focus:outline-none hover:bg-green-300 hover:text-black rounded absolute left-[9rem] bottom-[4rem]">Book</button>
@@ -66,14 +66,14 @@ function About() {
 
                     <div className='w-full'>
 
-                        <div className='border-2 rounded-md border-slate-100 m-2 flex shadow-2xl'>
+                        <div className='m-2 flex '>
 
                             <div className="h-auto w-1/2 flex justify-center items-center align-middle m-1">
 
                                 <Image src="/assets/external/tent-cropped.jpg" width={200} height={300} objectFit={'cover'} className="rounded-md shadow-lg" />
 
                             </div>
-                            <div className="h-auto w-1/2">
+                            <div className="h-auto w-1/2 flex align-middle justify-center items-center">
                                 <p className="p-2 text-lg font-milonga">Tents await you at the site, with a view that is
                                     breathtaking. Sunrise and sunset points will give you a 360° view into the hills and the horizon. </p>
                             </div>
@@ -89,10 +89,10 @@ function About() {
                         {/* <div className="absolute top-0 left-4 w-full h-80 bg-slate-200 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite"></div> */}
 
 
-                        <div className='border-2 rounded-md border-slate-100 m-2 flex shadow-2xl'>
+                        <div className='m-2 flex '>
 
 
-                            <div className="h-auto w-1/2">
+                            <div className="h-auto w-1/2 flex align-middle justify-center items-center">
                                 <p className="p-2 text-lg font-milonga">You can find yourself surrounded with the colours of wild flora
                                     and the sounds of the wild. Be it with your loved ones or a solo trip, we assure you rest, reflection
                                     and solitude.  </p>
@@ -114,14 +114,14 @@ function About() {
 
 
 
-                        <div className='border-2 rounded-md border-slate-100 m-2 flex shadow-2xl'>
+                        <div className='m-2 flex '>
 
                             <div className="h-auto w-1/2 flex justify-center items-center align-middle m-1">
 
                                 <Image src="/assets/external/camping-food.jpg" width={200} height={300} objectFit={'cover'} className="rounded-md shadow-lg" />
 
                             </div>
-                            <div className="h-auto w-1/2">
+                            <div className="h-auto w-1/2 flex align-middle justify-center items-center">
                                 <p className="p-2 text-lg font-milonga">Our package welcomes you with an evening tea at the campsite,
                                     sunset trek, dinner for the night. The day break starts with sunrise trek and dispersing with breakfast.</p>
                             </div>
@@ -137,10 +137,10 @@ function About() {
                         <div className="absolute -top-10 right-0 w-full h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70  animate-infinite"></div>
 
 
-                        <div className='border-2 rounded-md border-slate-100 m-2 flex shadow-2xl'>
+                        <div className='m-2 flex '>
 
 
-                            <div className="h-auto w-1/2">
+                            <div className="h-auto w-1/2 flex align-middle justify-center items-center">
                                 <p className="p-2 text-lg font-milonga">Your safety is our priority. All tents are pitched prior to the
                                     arrival of guests, and washrooms are within the surroundings. We have a kitchen that will provide you with
                                     hot water and kattan  to keep you warm.  </p>
