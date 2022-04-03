@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import Link from 'next/link'
 
 
@@ -7,16 +7,32 @@ const Menu = () => {
 
   const [mobileMenu, setMobileMenu] = useState('hidden')
 
+  const [y, setY] = useState(0);
 
+const handleNavigation = useCallback(
+  e => {
+    const window = e.currentTarget;
+    if (y > window.scrollY) {
+      console.log("scrolling up");
+    } else if (y < window.scrollY) {
+      console.log("scrolling down"); 
+    }
+    setY(window.scrollY);
+  }, [y]
+);
 
+useEffect(() => {
+  setY(window.scrollY);
+  window.addEventListener("scroll", handleNavigation);
 
-  // useEffect(() => {
-  //   setMobileMenu(!mobileMenu)
-  // }, [mobileMenu]);
-
+  return () => {
+    window.removeEventListener("scroll", handleNavigation);
+  };
+}, [handleNavigation]);
+// const y = 10;
   return (
     <>
-      <div id='top-menu' className="z-10 w-full flex justify-between p-2 absolute bg-transparent md:pt-5 md:pb-5 ">
+      <div id='top-menu' className={(y > 70 )?'transition-all duration-1000 z-10 w-full flex fixed justify-between p-2  md:pt-5 md:pb-5 bg-[#1d1635] ':'transition-all  duration-1000 z-10 w-full flex fixed justify-between p-2  md:pt-5 md:pb-5 bg-transparent'} >
 
         <div className="hidden md:container md:mx-auto md:flex">
           <div id='logo-on-left-larger-screen' className="hidden md:flex md:w-1/4">

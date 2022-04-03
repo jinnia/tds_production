@@ -77,7 +77,16 @@ const Footer = () => {
       </div>
       <div className="border-t border-gray-800">
         <div className="container px-5 py-8 flex flex-wrap mx-auto items-center">
-          <div className="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
+
+          <div className='container mx-auto flex flex-wrap justify-center' id="footerMenu">
+            <span className='p-1 mr-2 mt-2 border border-purple-200 text-sm block flex items-center align-middle justify-center'>HOME</span>
+            <span className='p-1 mr-2 mt-2 border border-purple-200 text-sm block flex items-center align-middle justify-center'>ABOUT US</span>
+            <span className='p-1 mr-2 mt-2 border border-purple-200 text-sm block flex items-center align-middle justify-center'>DESTINATIONS</span>
+            <span className='p-1 mr-2 mt-2 border border-purple-200 text-sm block flex items-center align-middle justify-center'>BLOG</span>
+            <span className='p-1 mr-2 mt-2 border border-purple-200 text-sm block flex items-center align-middle justify-center'>RESPONSIBLE TOURISM</span>
+            <span className='p-1 mr-2 mt-2 border border-purple-200 text-sm block flex items-center align-middle justify-center'>CONTACT</span>
+          </div>
+          {/* <div className="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
             <div className="relative sm:w-64 w-40 sm:mr-4 mr-2">
               <label htmlFor="footer-field" className="leading-7 text-sm text-gray-400">Placeholder</label>
               <input type="text" id="footer-field" name="footer-field" className="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:ring-2 focus:ring-green-900 focus:bg-transparent focus:border-green-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
@@ -86,7 +95,7 @@ const Footer = () => {
             <p className="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 text-center sm:text-left">Bitters chicharrones fanny pack
               <br className="lg:block hidden" />waistcoat green juice
             </p>
-          </div>
+          </div> */}
           <span className="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
             <a className="text-gray-400">
               <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-5 h-5" viewBox="0 0 24 24">

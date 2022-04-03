@@ -49,8 +49,8 @@ function About() {
                     <Image src="/assets/CloudFarm/CloudFarm2.jpg" width={400} height={350} objectFit={'cover'} className="blur-sm" />
                     <Image src="/assets/CloudFarm/CloudFarm3.jpg" width={400} height={350} objectFit={'cover'} className="blur-sm" />
 
-                    <h1 className='font-semibold text-5xl text-white absolute font-philosopher left-12 top-1/2'>Cloud Farm</h1>
-                    <button className="text-white bg-[#17A294] border-0 py-2 px-6 focus:outline-none hover:bg-green-300 hover:text-black rounded absolute left-[9rem] bottom-[4rem]">Book</button>
+                    <h1 className='font-semibold text-4xl text-white absolute font-philosopher top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>Cloud Farm</h1>
+                    <button className="text-white bg-[#17A294] border-0 py-2 px-6 focus:outline-none hover:bg-green-300 hover:text-black rounded absolute  top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2"  onClick={() => setCheckoutSelect(true)}>Book</button>
                 </div>
                 <div className="w-full h-full relative">
 
@@ -61,7 +61,7 @@ function About() {
 
 
 
-                    <p className="p-2 text-xl font-philosopher font-bold text-center text-black ">
+                    <p className="p-2 text-lg font-philosopher font-bold text-center text-black ">
 
                         Cloudfarm will mesmerize all your senses without limits, we promise.
                         You'll wake up amidst the clouds, with the rays of the sun kissing you. You'll find yourself in a dream.</p>
@@ -72,11 +72,11 @@ function About() {
 
                             <div className="h-auto w-1/2 flex justify-center items-center align-middle m-1">
 
-                                <Image src="/assets/external/tent-cropped.jpg" width={200} height={300} objectFit={'cover'} className="rounded-md shadow-lg" />
+                                <Image src="/assets/external/tent-cropped.jpg" width={200} height={200} objectFit={'cover'} className="rounded-md shadow-lg" />
 
                             </div>
                             <div className="h-auto w-1/2 flex align-middle justify-center items-center">
-                                <p className="p-2 text-lg font-milonga">Tents await you at the site, with a view that is
+                                <p className="p-2 font-milonga">Tents await you at the site, with a view that is
                                     breathtaking. Sunrise and sunset points will give you a 360° view into the hills and the horizon. </p>
                             </div>
 
@@ -95,13 +95,13 @@ function About() {
 
 
                             <div className="h-auto w-1/2 flex align-middle justify-center items-center">
-                                <p className="p-2 text-lg font-milonga">You can find yourself surrounded with the colours of wild flora
+                                <p className="p-2 font-milonga">You can find yourself surrounded with the colours of wild flora
                                     and the sounds of the wild. Be it with your loved ones or a solo trip, we assure you rest, reflection
                                     and solitude.  </p>
                             </div>
                             <div className="h-auto w-1/2 flex justify-center items-center align-middle m-1">
 
-                                <Image src="/assets/external/forest.jpg" width={200} height={300} objectFit={'cover'} className="rounded-md shadow-lg" />
+                                <Image src="/assets/external/forest.jpg" width={200} height={200} objectFit={'cover'} className="rounded-md shadow-lg" />
 
                             </div>
 
@@ -120,11 +120,11 @@ function About() {
 
                             <div className="h-auto w-1/2 flex justify-center items-center align-middle m-1">
 
-                                <Image src="/assets/external/camping-food.jpg" width={200} height={300} objectFit={'cover'} className="rounded-md shadow-lg" />
+                                <Image src="/assets/external/camping-food.jpg" width={200} height={200} objectFit={'cover'} className="rounded-md shadow-lg" />
 
                             </div>
                             <div className="h-auto w-1/2 flex align-middle justify-center items-center">
-                                <p className="p-2 text-lg font-milonga">Our package welcomes you with an evening tea at the campsite,
+                                <p className="p-2 font-milonga">Our package welcomes you with an evening tea at the campsite,
                                     sunset trek, dinner for the night. The day break starts with sunrise trek and dispersing with breakfast.</p>
                             </div>
 
@@ -143,13 +143,13 @@ function About() {
 
 
                             <div className="h-auto w-1/2 flex align-middle justify-center items-center">
-                                <p className="p-2 text-lg font-milonga">Your safety is our priority. All tents are pitched prior to the
+                                <p className="p-2 font-milonga">Your safety is our priority. All tents are pitched prior to the
                                     arrival of guests, and washrooms are within the surroundings. We have a kitchen that will provide you with
                                     hot water and kattan  to keep you warm.  </p>
                             </div>
                             <div className="h-auto w-1/2 flex justify-center items-center align-middle m-1">
 
-                                <Image src="/assets/CloudFarm/CloudFarm1.jpg" width={200} height={300} objectFit={'cover'} className="rounded-md shadow-lg" />
+                                <Image src="/assets/CloudFarm/CloudFarm1.jpg" width={200} height={200} objectFit={'cover'} className="rounded-md shadow-lg" />
 
                             </div>
 
