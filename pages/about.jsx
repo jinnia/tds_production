@@ -160,8 +160,8 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <div className="w-full text-center font-philosopher tracking-wide text-2xl sm:pb-2 mt-5  font-semibold">
-                    <h1>All You Need to do is allow us to host you</h1>
+                <div className="w-full text-center font-Museo tracking-wide text-2xl sm:pb-2 mt-5 mb-5 font-semibold">
+                    <h1 className='font-Museo uppercase font-semibold'>All You Need to do is allow us to host you</h1>
                 </div>
             </div>
             <div className='fixed w-auto h-auto right-0 bottom-0 z-50 animate-bounce'>
